@@ -1,17 +1,13 @@
-name: Deploy Debian Repo and Sync to kttdebianrepo.work.gd
+name: Deploy Debian Repo
 
 on:
   push:
     branches: [ main ]
 
 env:
-  REPO_DIR: ./debian-repo
+  REPO_DIR: .
   PUBLISH_BRANCH: gh-pages
   COMPONENT: main
-  REMOTE_USER: your_server_user
-  REMOTE_HOST: kttdebianrepo.work.gd
-  REMOTE_REPO_PATH: /var/www/debian-repo
-  REMOTE_NGINX_SERVICE: nginx
 
 jobs:
   deploy:
@@ -21,18 +17,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: sudo apt-get update && sudo apt-get install -y reprepro rsync ssh
+      - name: Install reprepro and nginx
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y reprepro nginx
 
-      - name: Generate Debian repo
+      - name: Setup Debian repository
         run: |
           mkdir -p "$REPO_DIR/conf"
-          cat > "$REPO_DIR/conf/distributions" <<EOF
-Codename: sid
-Suite: unstable
-Components: ${COMPONENT}
-Architectures: amd64 all
-EOF
+          echo "Codename: sid" > "$REPO_DIR/conf/distributions"
+          echo "Suite: unstable" >> "$REPO_DIR/conf/distributions"
+          echo "Components: ${COMPONENT}" >> "$REPO_DIR/conf/distributions"
+          echo "Architectures: amd64 all" >> "$REPO_DIR/conf/distributions"
 
           mkdir -p "$REPO_DIR/pool/${COMPONENT}"
           mkdir -p "$REPO_DIR/dists"
@@ -41,19 +37,19 @@ EOF
             reprepro -b "$REPO_DIR" -S utils -P optional -C $COMPONENT includedeb sid "$deb" || true
           done
 
+      - name: Start nginx to serve repo on port 8080
+        run: |
+          sudo mkdir -p /var/www/html
+          sudo cp -r $REPO_DIR/* /var/www/html/
+          sudo sed -i 's|listen 80 default_server|listen 8080 default_server|g' /etc/nginx/sites-available/default
+          sudo sed -i 's|root /var/www/html;|root /var/www/html;\n    autoindex on;|' /etc/nginx/sites-available/default
+          sudo nginx -t
+          sudo systemctl restart nginx
+          echo "Repo is now being served at http://$(curl -s ifconfig.me):8080"
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.REPO_DIR }}
           publish_branch: ${{ env.PUBLISH_BRANCH }}
-
-      - name: Sync repo to your server
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.REMOTE_SSH_PRIVATE_KEY }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          rsync -avz --delete $REPO_DIR/ $REMOTE_USER@$REMOTE_HOST:$REMOTE_REPO_PATH/
-          ssh -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST "sudo systemctl reload $REMOTE_NGINX_SERVICE"
