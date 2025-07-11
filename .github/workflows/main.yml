@@ -6,20 +6,26 @@ on:
       - main
 
 permissions:
-  contents: write  # Grants write access to repository contents
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./KTT-Debian-Repo
-          publish_branch: gh-pages
-          destination_dir: debian
+    # If you have build steps to generate repo metadata here, add them before deployment.
+    # - name: Build Debian repo metadata
+    #   run: ./scripts/generate_repo.sh
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./KTT-Debian-Repo    # your repo files locally
+        publish_branch: gh-pages
+        destination_dir: debian           # deploy inside 'debian/' on gh-pages branch
+        user_name: "github-actions[bot]"
+        user_email: "github-actions[bot]@users.noreply.github.com"
