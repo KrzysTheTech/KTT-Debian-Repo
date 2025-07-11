@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      REPO_DIR: ./debian
+      REPO_DIR: .
       PUBLISH_BRANCH: gh-pages
       COMPONENT: main
 
