@@ -33,7 +33,6 @@ EOF
           mkdir -p "$REPO_DIR/pool/${COMPONENT}"
           mkdir -p "$REPO_DIR/dists"
 
-          # Add any .deb packages found
           find $REPO_DIR/pool -type f -name "*.deb" | while read deb; do
             reprepro -b "$REPO_DIR" -S utils -P optional -C $COMPONENT includedeb sid "$deb" || true
           done
@@ -43,7 +42,7 @@ EOF
           sudo mkdir -p /var/www/html
           sudo cp -r $REPO_DIR/* /var/www/html/
           sudo sed -i 's|listen 80 default_server|listen 8080 default_server|g' /etc/nginx/sites-available/default
-          sudo sed -i 's|root /var/www/html;|root /var/www/html; autoindex on;|' /etc/nginx/sites-available/default
+          sudo sed -i 's|root /var/www/html;|root /var/www/html;\n    autoindex on;|' /etc/nginx/sites-available/default
           sudo nginx -t
           sudo systemctl restart nginx
           echo "Repo is now being served at http://$(curl -s ifconfig.me):8080"
