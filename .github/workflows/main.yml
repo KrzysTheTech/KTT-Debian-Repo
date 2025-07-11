@@ -23,12 +23,10 @@ jobs:
           sudo apt-get install -y reprepro nginx
 
           mkdir -p "$REPO_DIR/conf"
-          cat > "$REPO_DIR/conf/distributions" <<EOF
-Codename: sid
-Suite: unstable
-Components: ${COMPONENT}
-Architectures: amd64 all
-EOF
+          echo "Codename: sid" > "$REPO_DIR/conf/distributions"
+          echo "Suite: unstable" >> "$REPO_DIR/conf/distributions"
+          echo "Components: ${COMPONENT}" >> "$REPO_DIR/conf/distributions"
+          echo "Architectures: amd64 all" >> "$REPO_DIR/conf/distributions"
 
           mkdir -p "$REPO_DIR/pool/${COMPONENT}"
           mkdir -p "$REPO_DIR/dists"
