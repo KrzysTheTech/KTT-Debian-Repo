@@ -1,0 +1,76 @@
+# Buster (Stable)
+Codename: buster
+Suite: stable
+Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
+Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
+Contents:
+SignWith: 0x3CD04E944CA63595A7DB67612B48C0EDFB2E442F
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Description: Stable packages - Buster
+
+# Bullseye (Stable)
+Codename: bullseye
+Suite: stable
+Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
+Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
+Contents:
+SignWith: 0x3CD04E944CA63595A7DB67612B48C0EDFB2E442F
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Description: Stable packages - Bullseye
+
+# Bookworm (Stable)
+Codename: bookworm
+Suite: stable
+Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
+Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
+Contents:
+SignWith: 0x3CD04E944CA63595A7DB67612B48C0EDFB2E442F
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Description: Stable packages - Bookworm
+
+# Trixie (Testing)
+Codename: trixie
+Suite: testing
+Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
+Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
+Contents:
+SignWith: 0x3CD04E944CA63595A7DB67612B48C0EDFB2E442F
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Description: Testing packages - Trixie
+
+# Sid (Unstable)
+Codename: sid
+Suite: unstable
+Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
+Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
+Contents:
+SignWith: 0x3CD04E944CA63595A7DB67612B48C0EDFB2E442F
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Description: Unstable packages - Sid
+
+# Experimental
+Codename: experimental
+Suite: experimental
+Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
+Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
+Contents:
+SignWith: 0x3CD04E944CA63595A7DB67612B48C0EDFB2E442F
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Description: Alpha, beta and release candidate packages
+
+# Rc-buggy (Test Builds)
+Codename: rc-buggy
+Suite: rc-buggy
+Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
+Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
+Contents:
+SignWith: 0x3CD04E944CA63595A7DB67612B48C0EDFB2E442F
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Description: Test build packages with known or potential issues
