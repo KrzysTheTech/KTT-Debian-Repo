@@ -1,38 +1,56 @@
-name: Deploy Debian Repo to GitHub Pages
+name: Deploy Debian Repo
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+
+env:
+  REPO_DIR: .
+  PUBLISH_BRANCH: gh-pages
+  COMPONENT: main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      REPO_DIR: .
-      PUBLISH_BRANCH: gh-pages
-      COMPONENT: main
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Show repo files for debugging
-        run: ls -l $REPO_DIR
+      - name: Set up Debian repository with reprepro
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y reprepro nginx
 
-      - name: Deploy Debian repo to GitHub Pages
+          mkdir -p "$REPO_DIR/conf"
+          cat > "$REPO_DIR/conf/distributions" <<EOF
+Codename: sid
+Suite: unstable
+Components: ${COMPONENT}
+Architectures: amd64 all
+EOF
+
+          mkdir -p "$REPO_DIR/pool/${COMPONENT}"
+          mkdir -p "$REPO_DIR/dists"
+
+          # Add any .deb packages found
+          find $REPO_DIR/pool -type f -name "*.deb" | while read deb; do
+            reprepro -b "$REPO_DIR" -S utils -P optional -C $COMPONENT includedeb sid "$deb" || true
+          done
+
+      - name: Start nginx to serve repo on port 8080
+        run: |
+          sudo mkdir -p /var/www/html
+          sudo cp -r $REPO_DIR/* /var/www/html/
+          sudo sed -i 's|listen 80 default_server|listen 8080 default_server|g' /etc/nginx/sites-available/default
+          sudo sed -i 's|root /var/www/html;|root /var/www/html; autoindex on;|' /etc/nginx/sites-available/default
+          sudo nginx -t
+          sudo systemctl restart nginx
+          echo "Repo is now being served at http://$(curl -s ifconfig.me):8080"
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.REPO_DIR }}
           publish_branch: ${{ env.PUBLISH_BRANCH }}
-
-      - name: Install and start nginx to serve repo (preview)
-        if: true
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y nginx
-          sudo rm -rf /var/www/html/*
-          sudo cp -r $REPO_DIR/* /var/www/html/
-          sudo systemctl restart nginx
-          echo "Nginx is serving the repo at http://localhost"
