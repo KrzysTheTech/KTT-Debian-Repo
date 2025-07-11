@@ -8,6 +8,7 @@ env:
   REPO_DIR: .
   PUBLISH_BRANCH: gh-pages
   COMPONENT: main
+  CUSTOM_DOMAIN: kttdebianrepo.work.gd
 
 jobs:
   deploy:
@@ -36,6 +37,9 @@ jobs:
           find $REPO_DIR/pool -type f -name "*.deb" | while read deb; do
             reprepro -b "$REPO_DIR" -S utils -P optional -C $COMPONENT includedeb sid "$deb" || true
           done
+
+      - name: Setup GitHub Pages custom domain
+        run: echo "${CUSTOM_DOMAIN}" > "${REPO_DIR}/CNAME"
 
       - name: Start nginx to serve repo on port 8080
         run: |
