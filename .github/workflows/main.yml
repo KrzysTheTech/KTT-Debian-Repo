@@ -17,17 +17,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up GPG directory and import key
-        run: |
-          mkdir -p ~/.gnupg
-          chmod 700 ~/.gnupg
-          echo "$GPG_KEY_BASE64" | base64 -d > kttdebianrepo.asc
-          gpg --batch --import kttdebianrepo.asc
-          rm kttdebianrepo.asc
-          gpg --list-keys
-        env:
-          GPG_KEY_BASE64: ${{ secrets.GPG_PRIVATE_KEY_BASE64 }}
-
       - name: Show repo files for debugging
         run: ls -l $REPO_DIR
 
