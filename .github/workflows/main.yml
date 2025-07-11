@@ -1,4 +1,4 @@
-name: Deploy Debian Repo with GPG and Nginx test
+name: Deploy Debian Repo to GitHub Pages
 
 on:
   push:
@@ -6,40 +6,44 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     env:
       REPO_DIR: ./debian
       PUBLISH_BRANCH: gh-pages
+      COMPONENT: main
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Setup GPG key
-      env:
-        GPG_KEY_BASE64: ${{ secrets.GPG_PRIVATE_KEY_BASE64 }}
-      run: |
-        mkdir -p ~/.gnupg
-        chmod 700 ~/.gnupg
-        echo "$GPG_KEY_BASE64" | base64 -d > kttdebianrepo.asc
-        gpg --batch --import kttdebianrepo.asc
-        rm kttdebianrepo.asc
-        gpg --list-keys
+      - name: Set up GPG directory and import key
+        run: |
+          mkdir -p ~/.gnupg
+          chmod 700 ~/.gnupg
+          echo "$GPG_KEY_BASE64" | base64 -d > kttdebianrepo.asc
+          gpg --batch --import kttdebianrepo.asc
+          rm kttdebianrepo.asc
+          gpg --list-keys
+        env:
+          GPG_KEY_BASE64: ${{ secrets.GPG_PRIVATE_KEY_BASE64 }}
 
-    - name: Show repo folder contents
-      run: ls -l $REPO_DIR
+      - name: Show repo files for debugging
+        run: ls -l $REPO_DIR
 
-    - name: Deploy Debian repo to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ${{ env.REPO_DIR }}
-        publish_branch: ${{ env.PUBLISH_BRANCH }}
+      - name: Deploy Debian repo to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ env.REPO_DIR }}
+          publish_branch: ${{ env.PUBLISH_BRANCH }}
 
-    - name: Run nginx to serve repo (test)
-      run: |
-        docker run --rm -d -p 8080:80 \
-          -v $PWD/$REPO_DIR:/usr/share/nginx/html:ro \
-          nginx:alpine
-      # Add a wait or curl test here if needed
+      - name: Install and start nginx to serve repo (preview)
+        if: true
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nginx
+          sudo rm -rf /var/www/html/*
+          sudo cp -r $REPO_DIR/* /var/www/html/
+          sudo systemctl restart nginx
+          echo "Nginx is serving the repo at http://localhost"
