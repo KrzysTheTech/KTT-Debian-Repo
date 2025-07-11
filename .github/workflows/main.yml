@@ -1,4 +1,4 @@
-name: Build and Deploy Debian Repo
+name: Deploy Debian Repo with GPG and Nginx
 
 on:
   push:
@@ -10,51 +10,45 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+    - name: Checkout repo
+      uses: actions/checkout@v3
 
-      - name: Setup GPG
-        id: gpg_setup
-        run: |
-          echo "${{ secrets.GPG_PRIVATE_KEY }}" > kttdebianrepo.asc
-          gpg --batch --import kttdebianrepo.asc
-          # Trust the imported key ultimately:
-          KEY_FPR=$(gpg --list-keys --with-colons | grep '^fpr' | head -n1 | cut -d':' -f10)
-          echo -e "5\ny\n" | gpg --command-fd 0 --edit-key "$KEY_FPR" trust
+    - name: Setup GPG
+      env:
+        GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+      run: |
+        echo "$GPG_KEY" > kttdebianrepo.asc
+        gpg --batch --import kttdebianrepo.asc
+        rm kttdebianrepo.asc
 
-      - name: Sign repo metadata with GPG
-        run: |
-          # Example: sign your Release file
-          gpg --batch --yes --pinentry-mode loopback --passphrase "${{ secrets.GPG_PASSPHRASE }}" -abs -o ./debian/Release.gpg ./debian/Release
+    - name: Build Debian Repo (example)
+      run: |
+        # Your repo build commands here, e.g. reprepro calls
+        echo "Build steps here"
 
-      - name: Deploy Debian repo to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./debian
-          publish_branch: gh-pages
-          # Optional: set user info for commits
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+    - name: Setup nginx
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y nginx
+        # Configure nginx to serve ./debian at root
+        echo 'server {
+          listen 80;
+          server_name krzysthetech.github.io;
 
-      - name: Optional - Run Nginx to serve repo (for testing)
-        if: false  # Set to true if you want to test Nginx in the workflow
-        run: |
-          sudo apt update
-          sudo apt install -y nginx
-          sudo cp -r ./debian /var/www/html/KTT-Debian-Repo
-          sudo tee /etc/nginx/sites-available/debian-repo.conf > /dev/null <<EOF
-          server {
-            listen 80;
-            server_name KrzysTheTech.github.io;
-            root /var/www/html;
-            location /KTT-Debian-Repo/ {
-              autoindex on;
-              try_files \$uri \$uri/ =404;
-            }
+          root $PWD/debian;
+          autoindex on;
+
+          location / {
+            try_files $uri $uri/ =404;
           }
-          EOF
-          sudo ln -sf /etc/nginx/sites-available/debian-repo.conf /etc/nginx/sites-enabled/
-          sudo systemctl restart nginx
-          # Keep Nginx running (example)
-          sleep 30
+        }' | sudo tee /etc/nginx/sites-available/debian-repo
+
+        sudo ln -sf /etc/nginx/sites-available/debian-repo /etc/nginx/sites-enabled/
+        sudo systemctl restart nginx
+
+    - name: Deploy Debian repo to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./debian
+        publish_branch: gh-pages
