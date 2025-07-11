@@ -1,4 +1,4 @@
-name: Deploy Debian Repo with GPG and Nginx
+name: Deploy Debian Repo with GPG and Nginx test
 
 on:
   push:
@@ -6,49 +6,40 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      REPO_DIR: ./debian
+      PUBLISH_BRANCH: gh-pages
 
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
 
-    - name: Setup GPG
+    - name: Setup GPG key
       env:
-        GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        GPG_KEY_BASE64: ${{ secrets.GPG_PRIVATE_KEY_BASE64 }}
       run: |
-        echo "$GPG_KEY" > kttdebianrepo.asc
+        mkdir -p ~/.gnupg
+        chmod 700 ~/.gnupg
+        echo "$GPG_KEY_BASE64" | base64 -d > kttdebianrepo.asc
         gpg --batch --import kttdebianrepo.asc
         rm kttdebianrepo.asc
+        gpg --list-keys
 
-    - name: Build Debian Repo (example)
-      run: |
-        # Your repo build commands here, e.g. reprepro calls
-        echo "Build steps here"
-
-    - name: Setup nginx
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y nginx
-        # Configure nginx to serve ./debian at root
-        echo 'server {
-          listen 80;
-          server_name krzysthetech.github.io;
-
-          root $PWD/debian;
-          autoindex on;
-
-          location / {
-            try_files $uri $uri/ =404;
-          }
-        }' | sudo tee /etc/nginx/sites-available/debian-repo
-
-        sudo ln -sf /etc/nginx/sites-available/debian-repo /etc/nginx/sites-enabled/
-        sudo systemctl restart nginx
+    - name: Show repo folder contents
+      run: ls -l $REPO_DIR
 
     - name: Deploy Debian repo to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./debian
-        publish_branch: gh-pages
+        publish_dir: ${{ env.REPO_DIR }}
+        publish_branch: ${{ env.PUBLISH_BRANCH }}
+
+    - name: Run nginx to serve repo (test)
+      run: |
+        docker run --rm -d -p 8080:80 \
+          -v $PWD/$REPO_DIR:/usr/share/nginx/html:ro \
+          nginx:alpine
+      # Add a wait or curl test here if needed
