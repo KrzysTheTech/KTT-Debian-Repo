@@ -1,31 +1,60 @@
-name: Deploy Debian Repo to GitHub Pages
+name: Build and Deploy Debian Repo
 
 on:
   push:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-    # If you have build steps to generate repo metadata here, add them before deployment.
-    # - name: Build Debian repo metadata
-    #   run: ./scripts/generate_repo.sh
+      - name: Setup GPG
+        id: gpg_setup
+        run: |
+          echo "${{ secrets.GPG_PRIVATE_KEY }}" > kttdebianrepo.asc
+          gpg --batch --import kttdebianrepo.asc
+          # Trust the imported key ultimately:
+          KEY_FPR=$(gpg --list-keys --with-colons | grep '^fpr' | head -n1 | cut -d':' -f10)
+          echo -e "5\ny\n" | gpg --command-fd 0 --edit-key "$KEY_FPR" trust
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./KTT-Debian-Repo    # your repo files locally
-        publish_branch: gh-pages
-        destination_dir: debian           # deploy inside 'debian/' on gh-pages branch
-        user_name: "github-actions[bot]"
-        user_email: "github-actions[bot]@users.noreply.github.com"
+      - name: Sign repo metadata with GPG
+        run: |
+          # Example: sign your Release file
+          gpg --batch --yes --pinentry-mode loopback --passphrase "${{ secrets.GPG_PASSPHRASE }}" -abs -o ./debian/Release.gpg ./debian/Release
+
+      - name: Deploy Debian repo to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./debian
+          publish_branch: gh-pages
+          # Optional: set user info for commits
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Optional - Run Nginx to serve repo (for testing)
+        if: false  # Set to true if you want to test Nginx in the workflow
+        run: |
+          sudo apt update
+          sudo apt install -y nginx
+          sudo cp -r ./debian /var/www/html/KTT-Debian-Repo
+          sudo tee /etc/nginx/sites-available/debian-repo.conf > /dev/null <<EOF
+          server {
+            listen 80;
+            server_name KrzysTheTech.github.io;
+            root /var/www/html;
+            location /KTT-Debian-Repo/ {
+              autoindex on;
+              try_files \$uri \$uri/ =404;
+            }
+          }
+          EOF
+          sudo ln -sf /etc/nginx/sites-available/debian-repo.conf /etc/nginx/sites-enabled/
+          sudo systemctl restart nginx
+          # Keep Nginx running (example)
+          sleep 30
