@@ -1,59 +1,46 @@
-name: Deploy Debian Repo
+name: Build and Deploy Debian Repo
 
 on:
   push:
     branches: [ main ]
 
 env:
-  REPO_DIR: .
-  PUBLISH_BRANCH: gh-pages
+  REPO_DIR: ./debian
+  DIST: sid
   COMPONENT: main
-  CUSTOM_DOMAIN: kttdebianrepo.work.gd
+  DEPLOY_PATH: /var/www/kttdebianrepo
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-      - name: Install reprepro and nginx
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y reprepro nginx
+    - name: Install reprepro
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y reprepro
 
-      - name: Setup Debian repository
-        run: |
-          mkdir -p "$REPO_DIR/conf"
-          echo "Codename: sid" > "$REPO_DIR/conf/distributions"
-          echo "Suite: unstable" >> "$REPO_DIR/conf/distributions"
-          echo "Components: ${COMPONENT}" >> "$REPO_DIR/conf/distributions"
-          echo "Architectures: amd64 all" >> "$REPO_DIR/conf/distributions"
+    - name: Prepare Debian repo
+      run: |
+        mkdir -p $REPO_DIR/conf $REPO_DIR/pool/$COMPONENT
+        echo "Codename: $DIST" > $REPO_DIR/conf/distributions
+        echo "Suite: unstable" >> $REPO_DIR/conf/distributions
+        echo "Components: $COMPONENT" >> $REPO_DIR/conf/distributions
+        echo "Architectures: amd64 all" >> $REPO_DIR/conf/distributions
 
-          mkdir -p "$REPO_DIR/pool/${COMPONENT}"
-          mkdir -p "$REPO_DIR/dists"
+        # Include all .deb packages
+        find $REPO_DIR/pool -type f -name "*.deb" | while read deb; do
+          reprepro -b $REPO_DIR -S utils -P optional -C $COMPONENT includedeb $DIST "$deb" || true
+        done
 
-          find $REPO_DIR/pool -type f -name "*.deb" | while read deb; do
-            reprepro -b "$REPO_DIR" -S utils -P optional -C $COMPONENT includedeb sid "$deb" || true
-          done
+    - name: Set up SSH agent
+      uses: webfactory/ssh-agent@v0.8.1
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Setup GitHub Pages custom domain
-        run: echo "${CUSTOM_DOMAIN}" > "${REPO_DIR}/CNAME"
-
-      - name: Start nginx to serve repo on port 8080
-        run: |
-          sudo mkdir -p /var/www/html
-          sudo cp -r $REPO_DIR/* /var/www/html/
-          sudo sed -i 's|listen 80 default_server|listen 8080 default_server|g' /etc/nginx/sites-available/default
-          sudo sed -i 's|root /var/www/html;|root /var/www/html;\n    autoindex on;|' /etc/nginx/sites-available/default
-          sudo nginx -t
-          sudo systemctl restart nginx
-          echo "Repo is now being served at http://$(curl -s ifconfig.me):8080"
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ${{ env.REPO_DIR }}
-          publish_branch: ${{ env.PUBLISH_BRANCH }}
+    - name: Rsync repository to kttdebianrepo.work.gd
+      run: |
+        rsync -avz --delete $REPO_DIR/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:$DEPLOY_PATH/
