@@ -1,48 +1,20 @@
-name: Build and Deploy Debian Repo
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [ main ]
-
-env:
-  REPO_DIR: ./debian
-  DIST: sid
-  COMPONENT: main
-  DEPLOY_PATH: /var/www/kttdebianrepo
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Install reprepro
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y reprepro
-
-    - name: Prepare Debian repo (v0.9.1 .deb support)
-      run: |
-        mkdir -p $REPO_DIR/conf $REPO_DIR/pool/$COMPONENT
-
-        echo "Codename: $DIST" > $REPO_DIR/conf/distributions
-        echo "Suite: unstable" >> $REPO_DIR/conf/distributions
-        echo "Components: $COMPONENT" >> $REPO_DIR/conf/distributions
-        echo "Architectures: amd64 all" >> $REPO_DIR/conf/distributions
-
-        echo "==> Including .deb packages with tag v0.9.1"
-        find $REPO_DIR/pool -type f -name "*v0.9.1*.deb" | while read deb; do
-          reprepro -b $REPO_DIR -S utils -P optional -C $COMPONENT includedeb $DIST "$deb" || true
-        done
-
-    - name: Set up SSH agent
-      uses: webfactory/ssh-agent@v0.9.1
-      with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-    - name: Rsync repository to kttdebianrepo.work.gd
-      run: |
-        echo "==> Uploading repo to ${{ secrets.DEPLOY_HOST }}:$DEPLOY_PATH"
-        rsync -avz --delete $REPO_DIR/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:$DEPLOY_PATH/
+      - name: Deploy prebuilt Debian repo
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./debian
+          publish_branch: gh-pages
