@@ -5,7 +5,7 @@ Origin: Krzysztof Demir Kuźniak
 Label: Krzysztof Demir Kuźniak
 Suite: rc-buggy
 Codename: rc-buggy
-Date: Sat, 12 Jul 2025 07:57:26 UTC
+Date: Sat, 12 Jul 2025 08:29:03 UTC
 Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
 Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
 Description: Test build packages with known or potential issues
@@ -1022,17 +1022,17 @@ SHA256:
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-s390x.xz
 -----BEGIN PGP SIGNATURE-----
 
-iQIyBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyFWYACgkQK0jA7fsu
-RC+HVQ/4uSk+8xg/eOCTk9hfwdydhmsqtJFb1Uup6bWw/OznpGuvffzxSuJVlGJS
-OBIbMi27fD1+E6kUfdaXYkY1tOra4H9KEICKOxdyeV3O9M+isA08DKRDRd92EVIw
-guA0dSRmgPxFLnFhfe3mN2KS6vywictMoxzzfzzzdwAlD1ZHEeMgGY4wKBV2+gYz
-FrAuH6/HhgYetOzwBNDA8Zf/Zs0P62V+5bf7oXwP4SjW0WYZrJWblbeqW8juQHoE
-FrPFbc7otJBt7Ik39z3Fib/E9XUSKdpjrFuera+aSedoexxPVm4Q9Zzi8mMXQBN+
-P5fOyf2+ev9bOKLvS0otD8UjsgWXOucRCHrx+vnpzta8JbG9KEwY2yAYOV+C+VzA
-R9FBEH4nj+YkfDgas16G/6XW2Sznn6FcIlFP2E5KbZWbWX3L1DSa1+oDxNBzW7RV
-1okQF1VTNFR3ykZ7guF5ONQTnU0JinptAd6nobttkLLdBmY3/KygZ6hUxpjDEJiG
-fEyCkzs4C5cqkM1rklCu3kxaExKsJRd4cwbwTXE3cdq6fdv0jbWm4qiBGk3L9wah
-4j+OHA22cu8pEglK6Dlp5cZBBMTyOJrYn3WiBlaZyFCvH1WGVNzyhtk5l7vzcfJp
-2TVK30GfUGwTh+YPH22m8/eKKcr9X0vx+m/IXyk7PLGUO0EkQQ==
-=7Vo/
+iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyHNAACgkQK0jA7fsu
+RC+8RQ//WojMHDw/SCFMOojYSaYJKlKiTI9Ec91IDERZhU9doyhrHn/lDQGTbfR3
+J7jxRuCLlOhxv0n+b0MqXAnQ+IeOaJiwCnYJ4A5zAG9Ge/VBZhmKk9Ah91N5yZ08
+M+hslp0Fr71iSqc4z+yheTDiqBHIkjHbhKPDyyR+L9GJUhktXI/9WTp7wc/7AWvq
+kdYtdiIdEq4FQ3Z3DZAF1Rq5P1RSmSrR3+XBrfcAlsdEc3pyq4m1Yt6cwM4RKEJB
+nC4pkC7s12D2bvA9YQQaJUWQioPxM52sIgag/DHcci6DBbqHZCasR2b6JMe3gXfb
+oX+J3puriK22BQ6JIihTkLUiNj/5nd02vfi9G+UG7RRNJQxm3271illP3w1xKTlj
+Z77cRK6WfSPCqMMZ+VGetHTAtNMYhLl0nhXkFWNgr9JwAfCWECVyJRLFvMbWYoGj
+ctL1dW6/Ht4AO+QyGbbeiClfgkMUiL1qcxpNfbsCdHUAsfmZVIAyXLNwMOQvrTZy
+6SV+pF3Zrm99+rNnzJHyuS2f/U+7U8dK44CS3kBkANfa5ciXXvPi/kBR7jtnkj18
+UG0fbLVBAkX1Xt39Vm5sY9W5mpcJjCdOO3aIP07hTrIu57VFlfxk+gyHoVte8WRA
+RH/TVKjFN97TDXot7tHVXGryyBwuMZVNkW1GDGdASBXep3MDRs0=
+=Sm9P
 -----END PGP SIGNATURE-----

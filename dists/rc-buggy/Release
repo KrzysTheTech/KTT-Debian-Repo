@@ -2,7 +2,7 @@ Origin: Krzysztof Demir Kuźniak
 Label: Krzysztof Demir Kuźniak
 Suite: rc-buggy
 Codename: rc-buggy
-Date: Sat, 12 Jul 2025 07:57:26 UTC
+Date: Sat, 12 Jul 2025 08:29:03 UTC
 Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
 Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
 Description: Test build packages with known or potential issues

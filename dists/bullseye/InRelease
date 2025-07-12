@@ -5,7 +5,7 @@ Origin: Krzysztof Demir Kuźniak
 Label: Krzysztof Demir Kuźniak
 Suite: stable
 Codename: bullseye
-Date: Sat, 12 Jul 2025 07:57:13 UTC
+Date: Sat, 12 Jul 2025 08:28:52 UTC
 Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
 Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
 Description: Stable packages - Bullseye
@@ -1022,17 +1022,17 @@ SHA256:
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-s390x.xz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyFVoACgkQK0jA7fsu
-RC9WCg/9HjDpfNrWZs9xDEsEBU/vEFeRX6nTHMyxW5Iv2VxX6041zWv3nmAGN34A
-KhzSrUblhKip9MwEnUKT0Wh9ja77+78h7G4zwb+wIre2/9hnE11XgGyZt4XC0RTw
-Xtos2zOlBUlifzHpGLKwWpHY7SL7VFhbiB6PJn8Bl/JcdTRgu4MLPl9xUsneKEf9
-o7j1UGyi1wLvno5KcqMRCIIb5GKnqVSjjJIvkfw7ZnxbniZLqHv1l48bl8gkL02z
-fEPzYAGuP2SoW1vnNl+o6GEC1Eozz7A6/i1v+3pjdZoUTJ289oJ1zaA2JCwI2ebf
-v4Uuc8fisZ5yDNoKvPHoasAozSZDgMJwJEQAAQCRtiayB+lFC54Fmu709aaLingc
-Ubf3T2N2g7yp2v+DZ4D5sUyXZKo+/bTRKIpQc42eLiYP08IggK16F2FYU9vs2t4b
-ilLuvi87FacUoQ4UNwB8+8l4TWfRRiMrEiPFuJL94+ya4q7mM4aVa9ImXCmEaHe6
-D63ldgvUPbQj8f6YrcPcRPeZlnEMA4h3k0bfcgBpdVqR1kzDrSoYwjvMub5enZ7t
-JV8xRtHLZ+CbxCKWvz4Mh6aSNtycPHk7+koKGb0FCvu3eqXX5AREvdGllWjw4+c7
-moFJahlfRaWGVIoEcXeNIOH0ybR4qr0mP/dMHmEo1LEuVd5aIJo=
-=VmH4
+iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyHMQACgkQK0jA7fsu
+RC8qQg//aHtxbnXYLg60jJHFuPGugomsHXLbVGJhQZxOJfiVEejWX2CxL7zkp+SQ
+a0nlptvfSv56hoKAh9q7AAXypdTUOM9urSDs8HJwxwCNKmk2hX+sFGiumqfktAY1
+UfdvRnlcFH2bGcJoWTZ7ItomShdHRboQbZxWmlQoOj+RPXAUiS9SYGVLcdtGSbRW
+J8YPf6R0MHFbaL4ZIABoZMUFjHKbWcJYlHJaQclkzLr4pObtNviKFKLLIsI0k9sR
+P4HLpIOLqzPw1ouLi40p565XkJbDbDVXiMtoIVwVIbldrvAaDvtEmhzWQNAYbls1
+SnfLTZjpbz9WjhgVFwPXS/iXIF2kgLH0Dn5ouMJg9wJxuZq2elt/LQqoPVqNV2sj
+SiI7gsfTb0Coptoo9oYIB1bSP9byTOgbBt/tW4vNgXseMWE7PIPO8R69S7ouIOeq
+Cc+D1rcC/VKgfmjLKICmSmFTfOaMcGBFzvK/gg0luzoijwkUQxTBvF9cyUh7N+Ic
+JCkimgpGMsuDYBMz0pyCz6hAvtbflkwnqRA99ORZFMQTSR/jCJvpgOeBO90D3AZV
+ZsEii4m1ZdNbN5ZV1kobyf7LPHKKsfdPPDSSujJNDN405radIQf6dxlrbPFjz6iN
+a160Ci18dPp2mvirM1lBfsejgaZxL9TI8DA05y02ilL0kQ+YTNY=
+=Jq3e
 -----END PGP SIGNATURE-----

@@ -5,7 +5,7 @@ Origin: Krzysztof Demir Kuźniak
 Label: Krzysztof Demir Kuźniak
 Suite: unstable
 Codename: sid
-Date: Sat, 12 Jul 2025 07:57:21 UTC
+Date: Sat, 12 Jul 2025 08:28:59 UTC
 Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
 Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
 Description: Unstable packages - Sid
@@ -1022,17 +1022,17 @@ SHA256:
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-s390x.xz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyFWEACgkQK0jA7fsu
-RC9pEw//ZzuwcbBsq+asfCl9uIaRYShdYWfw+ijn/7r4LQqpG9MSKr0u95p2Ju7L
-aoKJ7iCfAU27Ftd+kF1KC0qCl2EIlEWWevtjj1MBmcDSoASxicntXc8snlsJFxHi
-lIeI8hZnkeBYqKYebkskxex4bLpnztjLcyP9y317o5gJAYiUAwD+W4u+ZvpfrTYk
-Cggr/81lKQ3bm/dBkanD2RVPNWXj0/nTRKqrh5uJ7GjSbVaIrv+Xbl3F1aqIJ7Un
-omggqasPZLqUnN06g2Tq5h0FRLmkU1oJ4FS6HFN59n1Xa6SxdHISCL41JuaWCxXz
-30LBl77IkSFm4XpO2sBe1PMDpwTsLXQtjzIpZ2enIoeBni1/+lSARQP8fBeSmH8q
-sEm1aGkCxEcCAUoqV2+I6XirfYNy8Otixo5A1uA8D6nrLLVC8H5IrkzmJ12+oZ19
-ILAe+HnvpR3u7l4sWq9RLFM9PbLp3SZ8kBGugpMWoEPlj2NXkm1wcw/dlo+Fj2f9
-QxXftC/1/fYmKfRoeeQKsf4iByaEwj5vBt/BsJNmdhvPzYXxGKnUV6sbWDFp+5Bz
-hXhTgOIs5sAZrodJ9DTDdtP5vROgaQkgJj87zm0BDPEncbc7nL11YOyIP19Op6Hl
-YS7savnkCQNErFEEVZvt7/tAVlCvkDUj0OsdF4jXqgq54UE6bpo=
-=3/0X
+iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyHMsACgkQK0jA7fsu
+RC83OA//XX9n6OnpqkVOht+cI5DHET9SXG9k+Z/oPtCDd1SiOG3ZGLuX0l4ZfwKq
+lp8giwgB3LSfAnbHaQQ0X0NZiwonuSc4AkY+6j8eX16lPXj38AfA1M9QMed8Sd4W
+aZgXq38qlu6ntsB36f0k2BYGrhYsa7gMgZK03dBS4jNAz3Dmz5p3rxGKF1Mk+RVg
+1Se7dvDdiEd0N9IJ0l2SMGpFDlCOjEnYEjyH50gHy04SGf2oNs46ZOCcevFDg74w
++3DYSs5FaxAxEV3ui7m8dDAi+caECag1SIsmQSLqvQYkph7fSzlZVrt9qMbZ2170
+w/vJK4WeZKQ3i/kgOUJ1IXv0iSBz1s/jKTXpkvS7Ys0ZipMiV2hjLmK1uWD6hJ8y
+FG3ph9ggVvGe4puA3FofrDVR2kV+DixytB70+VgnCMh4+Wb+huN0CEfXAGveoO8T
+SIKXRAp5WrnKl6hedegQTlRNuO7Wz3/2xp6kq+OKEMcYZ9DhgJ+SvvPu9sQjfjJA
+xHE84XmvDXvGZFTM3ZFj1ZLD+dKnfCspKU2NMnVtYqG/iKnB7T2EhYDAdAZqgJDj
+MwMU3Qy8nesq5iIYpPur9H+SpqpF+jgsrK5AySCU5Yq5QSlb0jjFhLaaRDjuMiTu
+JX/1/XI/RELLPQvjnv2U6uoYyf/+KANOtjEobGelH7xrlCeViXw=
+=9Q23
 -----END PGP SIGNATURE-----

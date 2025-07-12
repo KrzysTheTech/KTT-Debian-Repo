@@ -5,7 +5,7 @@ Origin: Krzysztof Demir Kuźniak
 Label: Krzysztof Demir Kuźniak
 Suite: stable
 Codename: buster
-Date: Sat, 12 Jul 2025 07:57:02 UTC
+Date: Sat, 12 Jul 2025 08:28:44 UTC
 Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
 Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
 Description: Stable packages - Buster
@@ -1022,17 +1022,17 @@ SHA256:
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-s390x.xz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyFVcACgkQK0jA7fsu
-RC9bzg/9F0ZjWQyZBJbOHrtNJruUV16KDYOPjW3VS6J1IN72bSVUFRpDSrK3a5Vk
-i8B8JPRpdqyFp5nFC6qRCrQCeMQdDzrHtsD5/PnM0IAvuIFmheiY3ntZ67+gqfRq
-tfAFkU7nbM5r2aQTjKEfdWYhsx7odRk4IPO7QMkC4OIoZuQH8VYcg5olb3nV9UQm
-lYHuKtVcN0ofNvNdmzg5Nnu8AChPuWRo2FqFQhUziPYQE7atvC+uOVpxHn54Iva7
-f0cj4HxIaKtzlFti/hA5Q4JK5qNf+ncGLSzyCm/WXmu2AMHEHqEKi/xT8PYX6ruE
-tsQpXvjt216RS4gAC0KWcfnSfu3oB/BE+sNiO5ghS6C84w5ax9c/MD/EERpGEnyk
-hsmyk7Gvs5dhg9eZl6vKvrUb3MX5zyC6CfCqASzXeATjeofJtBAohImJLWMBG6JK
-SG1KN1yowirLNDhVuxrj7U7rFL7+WaU/nGX/+nPOLuGnIe4XyLk+SxZCmelT3/xj
-G7wxb3jkBEgfRoHNNqsriVQ7Dh+XsQoQeWQSpQlTjCGNZHFINq2YfF+vyWI2Znsk
-HZkYwvbT8HyOoI0wJWcxrCDxeVcbrvlZSIYk1pk4XxbLEI0B6/YIGD2Z49Ys8wUk
-ugRIC/pyrkK5NURcCGzNG5T2hZN5bGV74qjk4qITJMSS9sXXXqc=
-=+gQ9
+iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyHMIACgkQK0jA7fsu
+RC++nw/9GIzkOAW6EQ137j1Zw/Piv7SrJOm1iVzwT07gxJqE01jVQf8bKxS0Vp27
+4IkYhS3RQ5ewC+G5WqXT2XRBct4upj+Ls3z+KgEpVq7eyayr7gStAvJOuMuUMAfX
++8DtbBlsy07WsXBisMgoVQjSts/es/ItKhapc0tVjYEyDywA9+NcY4iLnI2Wpi2s
+Y6WIyauuBo3GbJ8umbJDM3r6WnNZPq64Gq8AehtSzOyAEPp8B0MXWArIPREvQn4G
+Nco1PTlsvMhIF693zEcM3OVkSxhS+IH1Jp5ImkvJhT43hQYuTRmdrG5fyuHYo8IM
+lSp2FYo5CQONNAr2gz76SOmeIhI3n9rZ0iIyOS02n0N0PHy9q3t3bAZpIn3Zy4Tq
+W7DluJ3W9Bts+3Rgw3kDZk9WQ2v5tsrqIqp1teuxthsF8bP2dkn21RPxOqFEitK4
+Pj/n5shH5XDImBe/nJdQ+2f408KiNH3/FbPe5tJfws6Hd2rb9VV9qhkIn6wOkQfU
+Yx6FApHQjKApIb7wvDL7cBRxmal93z4t3Ge5lCRoI+rrw3m9QAvedosg6q8O+PP/
+jbR9PxlmHXI0QoOXi5k1QJs9CtmOb1u6Yx1VJ+HjXMnuwXrZHXxhvprZhZ7bRSVT
+qPTt8JkL3j0KHklDphlLgGM28Se2wNGGwRSo6U3232eV4EMRA3M=
+=GS7P
 -----END PGP SIGNATURE-----

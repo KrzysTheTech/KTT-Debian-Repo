@@ -5,7 +5,7 @@ Origin: Krzysztof Demir Kuźniak
 Label: Krzysztof Demir Kuźniak
 Suite: stable
 Codename: bookworm
-Date: Sat, 12 Jul 2025 07:57:15 UTC
+Date: Sat, 12 Jul 2025 08:28:54 UTC
 Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
 Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
 Description: Stable packages - Bookworm
@@ -1022,17 +1022,17 @@ SHA256:
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-s390x.xz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyFVwACgkQK0jA7fsu
-RC8nbhAAmJqpHXD8ypExSzF/g/Fm8p2yBLetJZVljy9QeUem7+ueFSmn4ZVhd2Rv
-7RxW1AVdS4H0XquxJBvdcKQ5an/8htSW+7tACrfMDCBh7FUGoRS+qHmAo0tWv9gl
-z5Fjm0WN8nnRxTGqyWB8KjaT0agY0XEzjlPw8TrN7dCRz/RJkgnbyVbT5CTiPGlw
-6LzPIIaZuVmipv4SWV5QSk9yrf8GLkoOGdLa2FycVubvzMDWSCaf1MYnSIX5IOwC
-fcWHUFfmuia47m80bBxqziHbieU4n5eSCo1by3uKMXy9RJ87oHD2RDnQjOSaei37
-SGVX4snB1pbt0QWC1OvBicbyCgNQUQk0zyAG61sWWYAsaKPjzYfAuip5Mol2rBRf
-WG74HlpZ1JeX9GEnoRlLTv8vfGWKIMNgdv8AmKTm/bt4ATo0BivPS0smu+cDylnf
-/vk4JjVjfV0MoIIKnKHxPkBQf77REJqA+CNjvMklbVNlYUa+PytJPbZ/Rr3BxnMW
-Q6ExJLwbo6jo/m8j6paWRTp6B1Fpgr/EZWLvSqjkl7hnlLimr9tZmNTUzwvIH2w+
-CYurhkNHeRMVvC8HRbxq/HEihSWHix9pXnQp3eQp2HYyE85eRF7Q693oxq/aikg1
-6aokowQez7ncvfeg7lHkCh94h8vXI30jzXD5WTf+MZdtRSmkFr8=
-=pkTQ
+iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyHMcACgkQK0jA7fsu
+RC9nvhAAnjim96hTKzTvfFeYk3uS3SJf3ikQb++NZPsy25la6hemLVovKmcdlXrH
+ZRTaKGclHukopkuJeENppO+sHp5xHT7L9t4G8eODy1QUi/XksWmh6kcxiHpbwwOu
+ypDNTUhFLwqXImqTtGinhIhZDvbEKa9TuxRHUAADUwtDS9LZxtHWYarWVqrFN4pS
+s1NOBNfhZE6wOZMtvzwJI8jmuPeev/HLyYXQ+wNqHOVKeKgbOxRCXtOfYP4CkH3k
+EGVhmsbhE0YadHaT1RPAp76X4bNiXrxakZTVaMtKzpUBVKQJohrR8+rKLDDQVfp9
+9w/LmNxRdkRi8gEvbr6P6iKi0vVyVaI9As/dYeeEvbaW06TrE8D8CzEl1ebJixih
+z8vZhzQPmYdMb+T2C8kDW2gIzyqkGYjTJEHZd6qgFJyyw5G81FBY9GBUvfOQOX6O
+frT5wYetZ8CM8kLi6IWzah8LZMj2lsitP/xqeK6DxcG7mvG72Xpg5P/CbxwqQlxU
+rQFe4N9LL28YkDUWcvuuKTodTmAFg+OUTQrTaA9iPOjBg/iGu8fCWuQY65OvDWLJ
+qa+BD7rWC3wrb4LXW0CYhtORbeJK9uwHwnuAjDEmFaXxKBT9qi76KfBtTSsvvIcM
+Ftinls+gojXLN1HSZTLAuZ5NovLzCCWS6lgiX6JVsdkTh93WxCA=
+=cvVz
 -----END PGP SIGNATURE-----

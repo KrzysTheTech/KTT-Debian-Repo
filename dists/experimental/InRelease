@@ -5,7 +5,7 @@ Origin: Krzysztof Demir Kuźniak
 Label: Krzysztof Demir Kuźniak
 Suite: experimental
 Codename: experimental
-Date: Sat, 12 Jul 2025 07:57:23 UTC
+Date: Sat, 12 Jul 2025 08:29:01 UTC
 Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
 Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
 Description: Alpha, beta and release candidate packages
@@ -1022,17 +1022,17 @@ SHA256:
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-s390x.xz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyFWQACgkQK0jA7fsu
-RC/AlQ/+Os95Zu/NQOMZDyKHKCHGoj67tvnhutpEfqQQ9uwzAq8XnYH2v5pSo4wV
-kqn4QVN4CVwtRzDB/cHEweVlaADYd2VX2JgzVeQ/IWjDsUklhB9qBxssithO73Ft
-e59P0jrrrs4LwUIj6iqXD6YbBG6vbk8gp5hR3cAlYAWxMTYQ7u94IppItVI4SKdU
-9rj9Qbx7kkVuZKcjcD/iIQGLkbVH6dOlwfLZQ3ZyY6w0nReNyXTjQ9eMkvSl9W7p
-XOWYvABU9vmspvtA9/hsjwTkOon1Al+0VA62mj99AUcSMsKG600rHzvneu3cAmvf
-4/Df4VbrlcXq3DwPLcWh6QG973KFxlxAfmDE3ZjW6LhfNfKnlyXkL4oal5VRdO7/
-Uj2R0WgkengwFWWwAq3smCpQN6/fwA80TDI2TWcx1yXbdrEEJTZcOuNigNF5VRK5
-s5zEO2NVf/7BRkuPzTOJnVVuFNVfHjCSjhvCB8klU518VRooUwzik4P7W4wDvOVr
-XbWlnbaNWjfZMQV2FXPuRUfPeMNKAvFhNwa7fF2Jb8oPI3YQgyJ290sGbQqUu0oM
-HcX0q7ihbv1r2C2seAmkO49UuV1+H0LOQ69LuJxKoS/fT3kCxVRRcAc6jqQzKA3O
-0+TbyGYNWbXXlpSydYfHlGCwb3tKOQ99ihGs+ch1/fxGUwsWeAM=
-=R36N
+iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyHM4ACgkQK0jA7fsu
+RC+Zbg/8CrN18iYFHiZ9yCBA342f9Qf3iGQ8fUgjC6/oCl5pjoV8apCJKwoLSjiw
+sh1OWJioen+GE1XNfOIbRm+UcDoV79cQBnu6ZziYRrQnzAjlg+pM+KLc+ccb9yis
+CW0goESiFCcV8jBL80UwUO9aIP8evIGmQd0dqTxJWj1QAt/eeTFCuOJITfhfgQ1P
+y+MgodEsqPzKYoKHANmyjKfxpDGR5KY58PFP7TnbE881VPRIjpjO0cuM1TYeY5I9
+ZfrAwrZWeXAoLbNC4Yggv//fTffz5uB78OfpgPd1C81Un5bTwdkn131XEeuJSJsI
++LMC4RkbaDBNBOQ6ghW/P7uaValbMhk3Md7o7UV5QxCwWU6F5T95ALHkFXlVOCSc
+nZHtbZLoQUc1ONdorRtVj0t9rzkZVSTCvmK5OB5YeEy6c8Pw735hZkOE5OEkWPHO
+Dx7sfPOXyqiopovmvpmFos9pHCoMEK34tIgZ0JtBlu3nSOprWdZ111nu+fxMzqZK
+OUzQxLlB9fBlOswI17GsarRxhETXy98qyoOQ0AU9/VpGlXnDA1zFvpp00Hr82EC0
+bK/zPy4HhU9DGv6QVILsHtSD8Z1+L2UJPk2CaUiaovIy6icDURGNVfqRxzhkmEiQ
+4NkfFFcogoJw42Xl7qzII3XAT3LFzK11AuZqEtwuNb3TDg4EzUk=
+=/2p9
 -----END PGP SIGNATURE-----

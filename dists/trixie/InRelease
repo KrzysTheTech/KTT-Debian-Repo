@@ -5,7 +5,7 @@ Origin: Krzysztof Demir Kuźniak
 Label: Krzysztof Demir Kuźniak
 Suite: testing
 Codename: trixie
-Date: Sat, 12 Jul 2025 07:57:18 UTC
+Date: Sat, 12 Jul 2025 08:28:56 UTC
 Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
 Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
 Description: Testing packages - Trixie
@@ -1022,17 +1022,17 @@ SHA256:
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-s390x.xz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyFV8ACgkQK0jA7fsu
-RC9i0Q//YVk3Tpb2Ec97bxKv95w2WaW4dE+YyFmul/W1OlgPCP3yy6pkl6SM7m/2
-TT/oNa0biMrDpaoMKuz1/0rAF7bawB900lOBTSizTL0nz7173cLIhne4KrTYmpQd
-iB7ZNrOy6bPtEW4P1jNQq/Ft3bF8nsIaOOeevvK8HQHPsxC1hNc+EtRfb2mr/ngs
-pCLE3V9SHcWz87AlhbLPGhCb99t72CIwB7tSn62QPxx68DGcYens4HpwopfbddPT
-eLqM6DkeO9+urvm3/nYQa6BzPJY2RuGfAplftrBvCthL/HG0+LmYtoMm462OeTSj
-6MR2vHKeu38KVSxyMXVBECFWIBbKSt3ONpUcU8wAU7xoY6e5cYSYIUn+mr+qsmsY
-9TgtIxk/+vCQgN9K8jDMJSEsRGD2/z3jZNneJwe56YlwyvEFsA/ynx8Sn9HKhyGD
-y4gMWvUoQB3p15U8/FE3YdqiX7YF19JuICqW82o87Le6pcfjf6d/RsExuXYDiC1c
-QMwRe5oyq7UZus3UvF3TGlzVZVzrxws6AL6iLqRMod3VHnTZIxvHWPsfcvEyQHth
-k59/84bWN7b4EX/x2SfLbqix3BBc5lgN3DUDO4+0vO1PKKjr9C9Yqyh5vrWLTs44
-4z7YxRnhWtQ28nCRlUr2Tf0pnLnwSaNMl2kd8tv2j1KkScdr3KM=
-=qICw
+iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyHMkACgkQK0jA7fsu
+RC+eFg/+IdrxW+9pcpZrHUkPWtuoat93W5Kxtn4VPZF2CNzaDjdc68Nrv8KbpjSr
+tqUH1IUwiAzP/j+C+TfDkXXi81uMZK6frfs5plMQ5hX2c8it+ZQ7N9LhskFSZz6I
+s7yd5YA1xfz91PDOuDoJHX45sDU+pYqSlH6PX8Wkg0klZC0N/HPEexCstaG2MXcl
+fujh/izelq4nIK4DITHOvcoOE3qc486RPwCBbAyf16eL+/MWTeTJbM03nxI8Ge0F
+K/bT+kccA0WGZWvcBJxHpVSIi7GN0+LfsXjFVW76weaodrOAhUjK5+HjXYK8gIEW
+6tg8vQ2MSGsZQktAC4LXPW6wNZZ9dqfeFo2+MBxl/8KLSSihSUquQZiioGIUaGbL
+++ghpFjXA11cGrcFRl885avApokBOdol5MnzLIqG31kefZwMxCXITC5Cv1OyCNvp
+jdKlfVpPsXwpP95HuzvDDKSmgKAhHu41f85gQ4LQbyjMwVdihBR5Qw4IH4TTa+dd
+Ml44BVuYjVVlsa9ysxELX4uCxG+W7ke2Jsc9eOcI6WYBvEW4LJqXXchSFywXwPW+
+jQchnCwq5C6ygIKpjaREIZQqMo/HLZZ3vEmoJ7sLngT6VU9Nz01RIJja07A6Sk6x
+f5ZGTpQHIacWDy0ImBYtsJYjnAuBNNwm3h1zZkfKqRxQGItnlyc=
+=KSeB
 -----END PGP SIGNATURE-----
