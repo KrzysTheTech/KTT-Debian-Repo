@@ -1,0 +1,6 @@
+Archive: rc-buggy
+Component: non-free-firmware-testing
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Architecture: i386
+Description: Test build packages with known or potential issues

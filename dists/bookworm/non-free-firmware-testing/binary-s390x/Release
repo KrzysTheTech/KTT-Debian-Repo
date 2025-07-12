@@ -1,0 +1,6 @@
+Archive: stable
+Component: non-free-firmware-testing
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Architecture: s390x
+Description: Stable packages - Bookworm

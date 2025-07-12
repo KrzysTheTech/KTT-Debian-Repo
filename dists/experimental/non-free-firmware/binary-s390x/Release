@@ -1,0 +1,6 @@
+Archive: experimental
+Component: non-free-firmware
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Architecture: s390x
+Description: Alpha, beta and release candidate packages

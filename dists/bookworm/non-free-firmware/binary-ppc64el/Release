@@ -1,0 +1,6 @@
+Archive: stable
+Component: non-free-firmware
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Architecture: ppc64el
+Description: Stable packages - Bookworm

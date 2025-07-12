@@ -1,0 +1,6 @@
+Archive: rc-buggy
+Component: non-free
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Architecture: riscv64
+Description: Test build packages with known or potential issues

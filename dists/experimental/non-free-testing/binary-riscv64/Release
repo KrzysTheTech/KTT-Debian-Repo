@@ -1,0 +1,6 @@
+Archive: experimental
+Component: non-free-testing
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Architecture: riscv64
+Description: Alpha, beta and release candidate packages

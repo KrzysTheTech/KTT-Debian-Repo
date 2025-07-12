@@ -1,0 +1,6 @@
+Archive: rc-buggy
+Component: contrib
+Origin: Krzysztof Demir Kuźniak
+Label: Krzysztof Demir Kuźniak
+Architecture: arm64
+Description: Test build packages with known or potential issues
