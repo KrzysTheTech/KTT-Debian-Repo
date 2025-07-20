@@ -1,167 +1,69 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Origin: Krzysztof Demir Kuźniak
-Label: Krzysztof Demir Kuźniak
-Suite: unstable
 Codename: sid
-Date: Sat, 12 Jul 2025 08:28:59 UTC
-Architectures: amd64 arm64 i386 ppc64el riscv64 s390x
-Components: main contrib non-free non-free-firmware main-testing contrib-testing non-free-testing non-free-firmware-testing
-Description: Unstable packages - Sid
+Date: Sun, 20 Jul 2025 17:30:30 UTC
+Architectures: amd64 i386 arm64 ppc64el riscv64 s390x
+Components: main non-free non-free-firmware
 MD5Sum:
  c714c33738a42a5b2ef3abd7d9aba6b9 412 main/binary-amd64/Packages
  407ee591ce2de10b81f8cec5358f15b2 311 main/binary-amd64/Packages.gz
- a973d9ef03dedba846277ef67705a8d5 156 main/binary-amd64/Release
+ 063287201b2354699acfe229a752201d 36 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-i386/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-i386/Packages.gz
+ 5e77d15a7c8b516e15488780beb4ad24 35 main/binary-i386/Release
  40620f4f862dc0734257550b6b526805 408 main/binary-arm64/Packages
  4776c9bf651cf1359fbb1b5284207144 311 main/binary-arm64/Packages.gz
- 50272d47ac69c91ba0f4caeead08820c 156 main/binary-arm64/Release
- 40620f4f862dc0734257550b6b526805 408 main/binary-i386/Packages
- 4776c9bf651cf1359fbb1b5284207144 311 main/binary-i386/Packages.gz
- 0d76a9dc36a9582068c49ec5b0b3cdb3 155 main/binary-i386/Release
- 40620f4f862dc0734257550b6b526805 408 main/binary-ppc64el/Packages
- 4776c9bf651cf1359fbb1b5284207144 311 main/binary-ppc64el/Packages.gz
- a9c3977c828ed2bde14fad631770d003 158 main/binary-ppc64el/Release
- 40620f4f862dc0734257550b6b526805 408 main/binary-riscv64/Packages
- 4776c9bf651cf1359fbb1b5284207144 311 main/binary-riscv64/Packages.gz
- 5eff82b387745836b151c9a748f366d7 158 main/binary-riscv64/Release
- 40620f4f862dc0734257550b6b526805 408 main/binary-s390x/Packages
- 4776c9bf651cf1359fbb1b5284207144 311 main/binary-s390x/Packages.gz
- 3f91367423d6bdf66a1d7b894ac9080c 156 main/binary-s390x/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/binary-amd64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/binary-amd64/Packages.gz
- c35048cf825920651fffc2791d61a539 159 contrib/binary-amd64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/binary-arm64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/binary-arm64/Packages.gz
- 795f2112d8848ea6b3b3b035fa67747f 159 contrib/binary-arm64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/binary-i386/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/binary-i386/Packages.gz
- 11b03c1fae80801877f233170a5c42d2 158 contrib/binary-i386/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/binary-ppc64el/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/binary-ppc64el/Packages.gz
- fbf9be37f835799cedc055c9cac31e24 161 contrib/binary-ppc64el/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/binary-riscv64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/binary-riscv64/Packages.gz
- 7d788ad3b0908a8da5b9176b7341235e 161 contrib/binary-riscv64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/binary-s390x/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/binary-s390x/Packages.gz
- bedd70c80f32b641f2a331c68d3b7f15 159 contrib/binary-s390x/Release
+ e89c28b1abf5bb6bbd1e9a3ebe9fe004 36 main/binary-arm64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-ppc64el/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-ppc64el/Packages.gz
+ df10bcae139ed995bce78268ff4f1d2e 38 main/binary-ppc64el/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-riscv64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-riscv64/Packages.gz
+ 5a2ddec61f9d77c3522943149a838f46 38 main/binary-riscv64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-s390x/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-s390x/Packages.gz
+ 74caf93adbcd9adc7f2d00960fd75a78 36 main/binary-s390x/Release
  d41d8cd98f00b204e9800998ecf8427e 0 non-free/binary-amd64/Packages
  7029066c27ac6f5ef18d660d5741979a 20 non-free/binary-amd64/Packages.gz
- 22b2d063b188aaf89c399edf07a29141 160 non-free/binary-amd64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free/binary-arm64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free/binary-arm64/Packages.gz
- 0f6e0f9be390f5b26545136aced48ad7 160 non-free/binary-arm64/Release
+ c8e104f3e2700fd78b43b93da3bd6bf5 40 non-free/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 non-free/binary-i386/Packages
  7029066c27ac6f5ef18d660d5741979a 20 non-free/binary-i386/Packages.gz
- 592bd6460a7c2f4f45656cc85c89e1df 159 non-free/binary-i386/Release
+ 2c4b7f9fff2bccf2056cc0ba09f743b6 39 non-free/binary-i386/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 non-free/binary-arm64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 non-free/binary-arm64/Packages.gz
+ 8c01a1fe7568952210f5747b1183e585 40 non-free/binary-arm64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 non-free/binary-ppc64el/Packages
  7029066c27ac6f5ef18d660d5741979a 20 non-free/binary-ppc64el/Packages.gz
- 2ed5990f501a3146a4e84bcdcc822c4e 162 non-free/binary-ppc64el/Release
+ 57c8fbe133c880457d93d5e9f60df7f9 42 non-free/binary-ppc64el/Release
  d41d8cd98f00b204e9800998ecf8427e 0 non-free/binary-riscv64/Packages
  7029066c27ac6f5ef18d660d5741979a 20 non-free/binary-riscv64/Packages.gz
- 2f8d3f4f5b3519a857b48f823b401a18 162 non-free/binary-riscv64/Release
+ eb394204c9a4ee860bec31272ec07c0f 42 non-free/binary-riscv64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 non-free/binary-s390x/Packages
  7029066c27ac6f5ef18d660d5741979a 20 non-free/binary-s390x/Packages.gz
- 77db2693d7a16d658368ce7df0861f9d 160 non-free/binary-s390x/Release
+ fbb5929521fa2808a7e5b09e97d7e80a 40 non-free/binary-s390x/Release
  d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware/binary-amd64/Packages
  7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/binary-amd64/Packages.gz
- cb871f6b616643441062efc32a14a719 169 non-free-firmware/binary-amd64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware/binary-arm64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/binary-arm64/Packages.gz
- 768c25ab80ecf6804209850de64983c8 169 non-free-firmware/binary-arm64/Release
+ 25b05f930614b405cc72f3c8635503e9 49 non-free-firmware/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware/binary-i386/Packages
  7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/binary-i386/Packages.gz
- 1105ec31bab1fa34bc7a4ec8f3613aa4 168 non-free-firmware/binary-i386/Release
+ 354582a7e7295b7fbdf1c840cc3b0ab3 48 non-free-firmware/binary-i386/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware/binary-arm64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/binary-arm64/Packages.gz
+ 0b3fe914026c21001df56b9b00d938d8 49 non-free-firmware/binary-arm64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware/binary-ppc64el/Packages
  7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/binary-ppc64el/Packages.gz
- 0948d0a84f877ad6bffa97c164d0e4d9 171 non-free-firmware/binary-ppc64el/Release
+ d0c12c3a6426d5e9abbedbb62ef8dbeb 51 non-free-firmware/binary-ppc64el/Release
  d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware/binary-riscv64/Packages
  7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/binary-riscv64/Packages.gz
- 5a49dd712912984fc321c9a2fc713e55 171 non-free-firmware/binary-riscv64/Release
+ 1e5431105a943e46a22bb0f51137b445 51 non-free-firmware/binary-riscv64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware/binary-s390x/Packages
  7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/binary-s390x/Packages.gz
- 3c027b4d415c6b8da52cf60962c460dd 169 non-free-firmware/binary-s390x/Release
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/binary-amd64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/binary-amd64/Packages.gz
- 3432a35b10746b2cb79ac1dfdd56f174 164 main-testing/binary-amd64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/binary-arm64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/binary-arm64/Packages.gz
- 684bd6d33acd3a14e21d8f46cb861214 164 main-testing/binary-arm64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/binary-i386/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/binary-i386/Packages.gz
- 5417f763c333050875a634a1e973fd06 163 main-testing/binary-i386/Release
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/binary-ppc64el/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/binary-ppc64el/Packages.gz
- 495e200e24dc69170da9e5ecd34d7516 166 main-testing/binary-ppc64el/Release
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/binary-riscv64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/binary-riscv64/Packages.gz
- 071ec9354079a6a90e7ba0dd90901090 166 main-testing/binary-riscv64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/binary-s390x/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/binary-s390x/Packages.gz
- a5369e7c38de26bc3d60fd79aa847735 164 main-testing/binary-s390x/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/binary-amd64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/binary-amd64/Packages.gz
- 9a082be16ec600d642d3f0a4bff0182e 167 contrib-testing/binary-amd64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/binary-arm64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/binary-arm64/Packages.gz
- 8e58040a78d313df840df90646250287 167 contrib-testing/binary-arm64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/binary-i386/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/binary-i386/Packages.gz
- 6c1430ac7bfa1ac01a89baf5d1f02ae0 166 contrib-testing/binary-i386/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/binary-ppc64el/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/binary-ppc64el/Packages.gz
- 5695d6748daf2c334a555f6b0acc9924 169 contrib-testing/binary-ppc64el/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/binary-riscv64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/binary-riscv64/Packages.gz
- 4052616803ba1791d0acd83d0353a39f 169 contrib-testing/binary-riscv64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/binary-s390x/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/binary-s390x/Packages.gz
- ec858c79b06bddbdbff82ce66afec645 167 contrib-testing/binary-s390x/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/binary-amd64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/binary-amd64/Packages.gz
- 49c85e2063872458f39e29abfc5c4b0d 168 non-free-testing/binary-amd64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/binary-arm64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/binary-arm64/Packages.gz
- 3d92749a8d4fdd51986da889456e6aad 168 non-free-testing/binary-arm64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/binary-i386/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/binary-i386/Packages.gz
- 52f4de89f83c821aaf8c49e18ebe7ab9 167 non-free-testing/binary-i386/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/binary-ppc64el/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/binary-ppc64el/Packages.gz
- c9a31818f5fb59ec26370233d71fb7b7 170 non-free-testing/binary-ppc64el/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/binary-riscv64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/binary-riscv64/Packages.gz
- 8eca92455dab4e24f35e62b2b999081a 170 non-free-testing/binary-riscv64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/binary-s390x/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/binary-s390x/Packages.gz
- 63cbc576257ba45298fdcc04d39fcd01 168 non-free-testing/binary-s390x/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/binary-amd64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/binary-amd64/Packages.gz
- f773af0b9365b301fb7beada1aecd0b4 177 non-free-firmware-testing/binary-amd64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/binary-arm64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/binary-arm64/Packages.gz
- a1a19af8530f672b725fecf3c05e0ef2 177 non-free-firmware-testing/binary-arm64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/binary-i386/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/binary-i386/Packages.gz
- 56029d4b9a7815812b375327f0c1a833 176 non-free-firmware-testing/binary-i386/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/binary-ppc64el/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/binary-ppc64el/Packages.gz
- 250941eefc50746bd41da7381e19a853 179 non-free-firmware-testing/binary-ppc64el/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/binary-riscv64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/binary-riscv64/Packages.gz
- cfe7482a522d099da2def5e39abf2a71 179 non-free-firmware-testing/binary-riscv64/Release
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/binary-s390x/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/binary-s390x/Packages.gz
- 76060518a151ffa776f2c0b8424ef21a 177 non-free-firmware-testing/binary-s390x/Release
+ 77f1ff89dbb73d13ba64c3bebbccc5d8 49 non-free-firmware/binary-s390x/Release
  6fa3953b4d8e57583f7a49f7613adfb9 50 main/Contents-amd64
  6ebecee344936da6f6dc2a4d41387858 64 main/Contents-amd64.gz
  b7d309fd8f6b24dfe0ad8deb092a46f1 80 main/Contents-amd64.bz2
  8a8fe10d554e280012a1ba703a810adc 108 main/Contents-amd64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/Contents-amd64
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/Contents-amd64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib/Contents-amd64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib/Contents-amd64.xz
  d41d8cd98f00b204e9800998ecf8427e 0 non-free/Contents-amd64
  7029066c27ac6f5ef18d660d5741979a 20 non-free/Contents-amd64.gz
  4059d198768f9f8dc9372dc1c54bc3c3 14 non-free/Contents-amd64.bz2
@@ -170,62 +72,10 @@ MD5Sum:
  7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/Contents-amd64.gz
  4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware/Contents-amd64.bz2
  8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware/Contents-amd64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/Contents-amd64
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/Contents-amd64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 main-testing/Contents-amd64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 main-testing/Contents-amd64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/Contents-amd64
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/Contents-amd64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib-testing/Contents-amd64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib-testing/Contents-amd64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/Contents-amd64
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/Contents-amd64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-testing/Contents-amd64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-testing/Contents-amd64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/Contents-amd64
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/Contents-amd64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware-testing/Contents-amd64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware-testing/Contents-amd64.xz
- 6fa3953b4d8e57583f7a49f7613adfb9 50 main/Contents-arm64
- 6ebecee344936da6f6dc2a4d41387858 64 main/Contents-arm64.gz
- b7d309fd8f6b24dfe0ad8deb092a46f1 80 main/Contents-arm64.bz2
- 8a8fe10d554e280012a1ba703a810adc 108 main/Contents-arm64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/Contents-arm64
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/Contents-arm64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib/Contents-arm64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib/Contents-arm64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free/Contents-arm64
- 7029066c27ac6f5ef18d660d5741979a 20 non-free/Contents-arm64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free/Contents-arm64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free/Contents-arm64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware/Contents-arm64
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/Contents-arm64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware/Contents-arm64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware/Contents-arm64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/Contents-arm64
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/Contents-arm64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 main-testing/Contents-arm64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 main-testing/Contents-arm64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/Contents-arm64
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/Contents-arm64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib-testing/Contents-arm64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib-testing/Contents-arm64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/Contents-arm64
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/Contents-arm64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-testing/Contents-arm64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-testing/Contents-arm64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/Contents-arm64
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/Contents-arm64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware-testing/Contents-arm64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware-testing/Contents-arm64.xz
- 6fa3953b4d8e57583f7a49f7613adfb9 50 main/Contents-i386
- 6ebecee344936da6f6dc2a4d41387858 64 main/Contents-i386.gz
- b7d309fd8f6b24dfe0ad8deb092a46f1 80 main/Contents-i386.bz2
- 8a8fe10d554e280012a1ba703a810adc 108 main/Contents-i386.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/Contents-i386
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/Contents-i386.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib/Contents-i386.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib/Contents-i386.xz
+ d41d8cd98f00b204e9800998ecf8427e 0 main/Contents-i386
+ 7029066c27ac6f5ef18d660d5741979a 20 main/Contents-i386.gz
+ 4059d198768f9f8dc9372dc1c54bc3c3 14 main/Contents-i386.bz2
+ 8dc5aea5b03dff8595f096f9e368e888 32 main/Contents-i386.xz
  d41d8cd98f00b204e9800998ecf8427e 0 non-free/Contents-i386
  7029066c27ac6f5ef18d660d5741979a 20 non-free/Contents-i386.gz
  4059d198768f9f8dc9372dc1c54bc3c3 14 non-free/Contents-i386.bz2
@@ -234,30 +84,22 @@ MD5Sum:
  7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/Contents-i386.gz
  4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware/Contents-i386.bz2
  8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware/Contents-i386.xz
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/Contents-i386
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/Contents-i386.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 main-testing/Contents-i386.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 main-testing/Contents-i386.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/Contents-i386
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/Contents-i386.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib-testing/Contents-i386.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib-testing/Contents-i386.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/Contents-i386
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/Contents-i386.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-testing/Contents-i386.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-testing/Contents-i386.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/Contents-i386
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/Contents-i386.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware-testing/Contents-i386.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware-testing/Contents-i386.xz
- 6fa3953b4d8e57583f7a49f7613adfb9 50 main/Contents-ppc64el
- 6ebecee344936da6f6dc2a4d41387858 64 main/Contents-ppc64el.gz
- b7d309fd8f6b24dfe0ad8deb092a46f1 80 main/Contents-ppc64el.bz2
- 8a8fe10d554e280012a1ba703a810adc 108 main/Contents-ppc64el.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/Contents-ppc64el
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/Contents-ppc64el.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib/Contents-ppc64el.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib/Contents-ppc64el.xz
+ 6fa3953b4d8e57583f7a49f7613adfb9 50 main/Contents-arm64
+ 6ebecee344936da6f6dc2a4d41387858 64 main/Contents-arm64.gz
+ b7d309fd8f6b24dfe0ad8deb092a46f1 80 main/Contents-arm64.bz2
+ 8a8fe10d554e280012a1ba703a810adc 108 main/Contents-arm64.xz
+ d41d8cd98f00b204e9800998ecf8427e 0 non-free/Contents-arm64
+ 7029066c27ac6f5ef18d660d5741979a 20 non-free/Contents-arm64.gz
+ 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free/Contents-arm64.bz2
+ 8dc5aea5b03dff8595f096f9e368e888 32 non-free/Contents-arm64.xz
+ d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware/Contents-arm64
+ 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/Contents-arm64.gz
+ 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware/Contents-arm64.bz2
+ 8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware/Contents-arm64.xz
+ d41d8cd98f00b204e9800998ecf8427e 0 main/Contents-ppc64el
+ 7029066c27ac6f5ef18d660d5741979a 20 main/Contents-ppc64el.gz
+ 4059d198768f9f8dc9372dc1c54bc3c3 14 main/Contents-ppc64el.bz2
+ 8dc5aea5b03dff8595f096f9e368e888 32 main/Contents-ppc64el.xz
  d41d8cd98f00b204e9800998ecf8427e 0 non-free/Contents-ppc64el
  7029066c27ac6f5ef18d660d5741979a 20 non-free/Contents-ppc64el.gz
  4059d198768f9f8dc9372dc1c54bc3c3 14 non-free/Contents-ppc64el.bz2
@@ -266,30 +108,10 @@ MD5Sum:
  7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/Contents-ppc64el.gz
  4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware/Contents-ppc64el.bz2
  8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware/Contents-ppc64el.xz
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/Contents-ppc64el
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/Contents-ppc64el.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 main-testing/Contents-ppc64el.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 main-testing/Contents-ppc64el.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/Contents-ppc64el
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/Contents-ppc64el.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib-testing/Contents-ppc64el.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib-testing/Contents-ppc64el.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/Contents-ppc64el
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/Contents-ppc64el.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-testing/Contents-ppc64el.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-testing/Contents-ppc64el.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/Contents-ppc64el
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/Contents-ppc64el.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware-testing/Contents-ppc64el.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware-testing/Contents-ppc64el.xz
- 6fa3953b4d8e57583f7a49f7613adfb9 50 main/Contents-riscv64
- 6ebecee344936da6f6dc2a4d41387858 64 main/Contents-riscv64.gz
- b7d309fd8f6b24dfe0ad8deb092a46f1 80 main/Contents-riscv64.bz2
- 8a8fe10d554e280012a1ba703a810adc 108 main/Contents-riscv64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/Contents-riscv64
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/Contents-riscv64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib/Contents-riscv64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib/Contents-riscv64.xz
+ d41d8cd98f00b204e9800998ecf8427e 0 main/Contents-riscv64
+ 7029066c27ac6f5ef18d660d5741979a 20 main/Contents-riscv64.gz
+ 4059d198768f9f8dc9372dc1c54bc3c3 14 main/Contents-riscv64.bz2
+ 8dc5aea5b03dff8595f096f9e368e888 32 main/Contents-riscv64.xz
  d41d8cd98f00b204e9800998ecf8427e 0 non-free/Contents-riscv64
  7029066c27ac6f5ef18d660d5741979a 20 non-free/Contents-riscv64.gz
  4059d198768f9f8dc9372dc1c54bc3c3 14 non-free/Contents-riscv64.bz2
@@ -298,30 +120,10 @@ MD5Sum:
  7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/Contents-riscv64.gz
  4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware/Contents-riscv64.bz2
  8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware/Contents-riscv64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/Contents-riscv64
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/Contents-riscv64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 main-testing/Contents-riscv64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 main-testing/Contents-riscv64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/Contents-riscv64
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/Contents-riscv64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib-testing/Contents-riscv64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib-testing/Contents-riscv64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/Contents-riscv64
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/Contents-riscv64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-testing/Contents-riscv64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-testing/Contents-riscv64.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/Contents-riscv64
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/Contents-riscv64.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware-testing/Contents-riscv64.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware-testing/Contents-riscv64.xz
- 6fa3953b4d8e57583f7a49f7613adfb9 50 main/Contents-s390x
- 6ebecee344936da6f6dc2a4d41387858 64 main/Contents-s390x.gz
- b7d309fd8f6b24dfe0ad8deb092a46f1 80 main/Contents-s390x.bz2
- 8a8fe10d554e280012a1ba703a810adc 108 main/Contents-s390x.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib/Contents-s390x
- 7029066c27ac6f5ef18d660d5741979a 20 contrib/Contents-s390x.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib/Contents-s390x.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib/Contents-s390x.xz
+ d41d8cd98f00b204e9800998ecf8427e 0 main/Contents-s390x
+ 7029066c27ac6f5ef18d660d5741979a 20 main/Contents-s390x.gz
+ 4059d198768f9f8dc9372dc1c54bc3c3 14 main/Contents-s390x.bz2
+ 8dc5aea5b03dff8595f096f9e368e888 32 main/Contents-s390x.xz
  d41d8cd98f00b204e9800998ecf8427e 0 non-free/Contents-s390x
  7029066c27ac6f5ef18d660d5741979a 20 non-free/Contents-s390x.gz
  4059d198768f9f8dc9372dc1c54bc3c3 14 non-free/Contents-s390x.bz2
@@ -330,175 +132,65 @@ MD5Sum:
  7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware/Contents-s390x.gz
  4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware/Contents-s390x.bz2
  8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware/Contents-s390x.xz
- d41d8cd98f00b204e9800998ecf8427e 0 main-testing/Contents-s390x
- 7029066c27ac6f5ef18d660d5741979a 20 main-testing/Contents-s390x.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 main-testing/Contents-s390x.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 main-testing/Contents-s390x.xz
- d41d8cd98f00b204e9800998ecf8427e 0 contrib-testing/Contents-s390x
- 7029066c27ac6f5ef18d660d5741979a 20 contrib-testing/Contents-s390x.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 contrib-testing/Contents-s390x.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 contrib-testing/Contents-s390x.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-testing/Contents-s390x
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-testing/Contents-s390x.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-testing/Contents-s390x.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-testing/Contents-s390x.xz
- d41d8cd98f00b204e9800998ecf8427e 0 non-free-firmware-testing/Contents-s390x
- 7029066c27ac6f5ef18d660d5741979a 20 non-free-firmware-testing/Contents-s390x.gz
- 4059d198768f9f8dc9372dc1c54bc3c3 14 non-free-firmware-testing/Contents-s390x.bz2
- 8dc5aea5b03dff8595f096f9e368e888 32 non-free-firmware-testing/Contents-s390x.xz
 SHA1:
  10aa1a3fa3ec364157e618338647857780b257a4 412 main/binary-amd64/Packages
  ba817b3434d05e0e5401999c46716bb4a3bad3b2 311 main/binary-amd64/Packages.gz
- f93001ee7cc65aa7bc3c3670eb0894afdec3048c 156 main/binary-amd64/Release
+ f9082edea14092794f38390390e06abf8a922f7d 36 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-i386/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-i386/Packages.gz
+ ea0e5aa4a1859481eb8929e40af14736bd50387b 35 main/binary-i386/Release
  6f10e4ec0269e93e5182476d0da84dada564aed0 408 main/binary-arm64/Packages
  198b97eb97b0b23bb9ad7769ecefb51e5dfb017e 311 main/binary-arm64/Packages.gz
- 46a6701073e39e7451042ad40c6a773ea7551094 156 main/binary-arm64/Release
- 6f10e4ec0269e93e5182476d0da84dada564aed0 408 main/binary-i386/Packages
- 198b97eb97b0b23bb9ad7769ecefb51e5dfb017e 311 main/binary-i386/Packages.gz
- 4fc49e73d6e0c07017f510b6d2ccf8d176642e9a 155 main/binary-i386/Release
- 6f10e4ec0269e93e5182476d0da84dada564aed0 408 main/binary-ppc64el/Packages
- 198b97eb97b0b23bb9ad7769ecefb51e5dfb017e 311 main/binary-ppc64el/Packages.gz
- a9ea7cab0a80271cc152e1eebc3609dd11c2f79a 158 main/binary-ppc64el/Release
- 6f10e4ec0269e93e5182476d0da84dada564aed0 408 main/binary-riscv64/Packages
- 198b97eb97b0b23bb9ad7769ecefb51e5dfb017e 311 main/binary-riscv64/Packages.gz
- 5e2200b0c2d390293670ffd8803743b700a67efc 158 main/binary-riscv64/Release
- 6f10e4ec0269e93e5182476d0da84dada564aed0 408 main/binary-s390x/Packages
- 198b97eb97b0b23bb9ad7769ecefb51e5dfb017e 311 main/binary-s390x/Packages.gz
- ada5def3fe0fb3317b33e96de7ac9904b0d77255 156 main/binary-s390x/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/binary-amd64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/binary-amd64/Packages.gz
- b65eb6ce6204deb23c5306d551dc2f185e2732a9 159 contrib/binary-amd64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/binary-arm64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/binary-arm64/Packages.gz
- a103e374bfce3e8bfb1569f8407ed27f40e9f447 159 contrib/binary-arm64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/binary-i386/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/binary-i386/Packages.gz
- 34d5abb8d18c57a8744c53acd62ec35df5059a7e 158 contrib/binary-i386/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/binary-ppc64el/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/binary-ppc64el/Packages.gz
- 5e277d3e5eeb59204599923655115497b9875e53 161 contrib/binary-ppc64el/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/binary-riscv64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/binary-riscv64/Packages.gz
- 3e80a3aefe56ef936ff3532caa72a594b2ddb02c 161 contrib/binary-riscv64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/binary-s390x/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/binary-s390x/Packages.gz
- ed9e7482397a1213f8a23dd497df062aacf78d9f 159 contrib/binary-s390x/Release
+ 26519fde445e683e74519b33601c3901c8a45e3b 36 main/binary-arm64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-ppc64el/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-ppc64el/Packages.gz
+ 0ca6db069e24ceba9cdacf84ac8737127de2d0f1 38 main/binary-ppc64el/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-riscv64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-riscv64/Packages.gz
+ 9f2fc0536112c4b3927e8f970e16b319494b14f1 38 main/binary-riscv64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-s390x/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-s390x/Packages.gz
+ 021a15411aaaba5192d518dbc2ef6b97e200eabd 36 main/binary-s390x/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/binary-amd64/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/binary-amd64/Packages.gz
- 1ed277cdf05c55c4f132c055eb4d2f8c607ee9d6 160 non-free/binary-amd64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/binary-arm64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/binary-arm64/Packages.gz
- de61e97179fbbbf2ff99cbb4a581191c2eb7ae9e 160 non-free/binary-arm64/Release
+ 9014acd3cb55ccb187e9562592c60f535ca2f47f 40 non-free/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/binary-i386/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/binary-i386/Packages.gz
- 2aade235317bc66608f7156ae0726dce77d4752d 159 non-free/binary-i386/Release
+ 9d9cedb5cdb315a3a279e8b7fc596de955831d09 39 non-free/binary-i386/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/binary-arm64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/binary-arm64/Packages.gz
+ c3121fc0867fcb0f8b1df22a39e9650693409bf6 40 non-free/binary-arm64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/binary-ppc64el/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/binary-ppc64el/Packages.gz
- 01ab630b3f38c3447971e0c971990c4cc09b4fcc 162 non-free/binary-ppc64el/Release
+ 531e90b2b1d11306e3c05df4a07c76d3d4adb014 42 non-free/binary-ppc64el/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/binary-riscv64/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/binary-riscv64/Packages.gz
- 1fb6c55005fc7ace7467b1939be2e96b64aaa778 162 non-free/binary-riscv64/Release
+ b1e8b76145fdb47ebc335f81ad223b93445091ab 42 non-free/binary-riscv64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/binary-s390x/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/binary-s390x/Packages.gz
- 0e8b57f2e1f39a2b96db81b330438503cc276155 160 non-free/binary-s390x/Release
+ da35f52cb6c93a34922073bdd67de655bedaf821 40 non-free/binary-s390x/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware/binary-amd64/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/binary-amd64/Packages.gz
- 270a232f4ee6933782bae21e26282616b4375c5e 169 non-free-firmware/binary-amd64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware/binary-arm64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/binary-arm64/Packages.gz
- a9c93663f6d4f36cf95871dead0c44e6110046ce 169 non-free-firmware/binary-arm64/Release
+ 36e3266a5fdd7500a1ea147a49b1984c6a894ba9 49 non-free-firmware/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware/binary-i386/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/binary-i386/Packages.gz
- dc0ddcc2141973c152259c57eef19e0c1da9d83b 168 non-free-firmware/binary-i386/Release
+ 5c922c1ed47eeb87c4e286f3b3b395f4fe7fba5e 48 non-free-firmware/binary-i386/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware/binary-arm64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/binary-arm64/Packages.gz
+ 8883e975e4d27ba78f2150ce7de47ad744c86d67 49 non-free-firmware/binary-arm64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware/binary-ppc64el/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/binary-ppc64el/Packages.gz
- 406692b9c1a1b111c71bfb48367e3e15ad4763d2 171 non-free-firmware/binary-ppc64el/Release
+ b837c138c0704b0864598bf747650a897a517628 51 non-free-firmware/binary-ppc64el/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware/binary-riscv64/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/binary-riscv64/Packages.gz
- 2d5058fc259cbb9f666dc725e7254f53e9358efe 171 non-free-firmware/binary-riscv64/Release
+ 947cd49f080c167cd7b4a3677f00367eb97dd0c0 51 non-free-firmware/binary-riscv64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware/binary-s390x/Packages
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/binary-s390x/Packages.gz
- 969301ddf216cdf355f259f326aedcc43cb86bc8 169 non-free-firmware/binary-s390x/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/binary-amd64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/binary-amd64/Packages.gz
- 56ad90eccfa6982aa9721d449b03c26803071f90 164 main-testing/binary-amd64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/binary-arm64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/binary-arm64/Packages.gz
- 6711efbba5a96ec2de1c67139ad0a9790db44077 164 main-testing/binary-arm64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/binary-i386/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/binary-i386/Packages.gz
- b8a5d2fc26bca7eaf864a04685a6362cedc4a205 163 main-testing/binary-i386/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/binary-ppc64el/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/binary-ppc64el/Packages.gz
- f099f8bc0d41d340b226d387c6b5358f73b7b45f 166 main-testing/binary-ppc64el/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/binary-riscv64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/binary-riscv64/Packages.gz
- 1e68a7325ec2b341ab74455e199ff732f0d1f175 166 main-testing/binary-riscv64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/binary-s390x/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/binary-s390x/Packages.gz
- 3a29582881af11176650e9094b56dde5e04f245b 164 main-testing/binary-s390x/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/binary-amd64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/binary-amd64/Packages.gz
- 1a1881f65e5147fc04a46ea4f66c8c7a4fbfd942 167 contrib-testing/binary-amd64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/binary-arm64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/binary-arm64/Packages.gz
- 242830409f61946faf7eb3f821ff725fb56deb1d 167 contrib-testing/binary-arm64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/binary-i386/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/binary-i386/Packages.gz
- 56d4750f044e9e8761e29dfa2c2f86212fe9f985 166 contrib-testing/binary-i386/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/binary-ppc64el/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/binary-ppc64el/Packages.gz
- 7dad2c427ad404f3dd8a0fa93d2e3795d98cc81d 169 contrib-testing/binary-ppc64el/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/binary-riscv64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/binary-riscv64/Packages.gz
- 632b719f0d04c85bd9e3a7dabd1664db27314c91 169 contrib-testing/binary-riscv64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/binary-s390x/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/binary-s390x/Packages.gz
- 12f86cabfbe883bff3161c1200feaa36790af452 167 contrib-testing/binary-s390x/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/binary-amd64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/binary-amd64/Packages.gz
- 2527d5029502db526a65cf411eaab61571cfdde6 168 non-free-testing/binary-amd64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/binary-arm64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/binary-arm64/Packages.gz
- 748a74b946204e83c4c373d34ac5c7a3d49b51e5 168 non-free-testing/binary-arm64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/binary-i386/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/binary-i386/Packages.gz
- 90e6e07852233fa1fd90f98ba0931042196819c2 167 non-free-testing/binary-i386/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/binary-ppc64el/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/binary-ppc64el/Packages.gz
- 92d3c056bb6ded4d7d2b7d8e8f96bd86a8b38d68 170 non-free-testing/binary-ppc64el/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/binary-riscv64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/binary-riscv64/Packages.gz
- 9b6e2c149e321c866bee4812f04afc4b653f078e 170 non-free-testing/binary-riscv64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/binary-s390x/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/binary-s390x/Packages.gz
- 87566dd40ba6bdb3d603e76fc1a9905094acc4b0 168 non-free-testing/binary-s390x/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/binary-amd64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/binary-amd64/Packages.gz
- 43da5d4822fb3094cd0cc6646c9e03bf6bfac595 177 non-free-firmware-testing/binary-amd64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/binary-arm64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/binary-arm64/Packages.gz
- f5bcdacbd692fc7f8849ef29ddb530bb6db23cf3 177 non-free-firmware-testing/binary-arm64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/binary-i386/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/binary-i386/Packages.gz
- 678bc7cc6163f871aa66f53c5e8ccc9f2bc66a37 176 non-free-firmware-testing/binary-i386/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/binary-ppc64el/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/binary-ppc64el/Packages.gz
- a5207cb25bfbb63c6954f05d86238a11ad0db8be 179 non-free-firmware-testing/binary-ppc64el/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/binary-riscv64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/binary-riscv64/Packages.gz
- 9c433a55b0fc7b38daf54548fb396efdbffb4181 179 non-free-firmware-testing/binary-riscv64/Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/binary-s390x/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/binary-s390x/Packages.gz
- 0c41264a768294d3ee0dfae99b0fceb8a7635c33 177 non-free-firmware-testing/binary-s390x/Release
+ 709a5f4b32aacebacecbe8550010707204dea188 49 non-free-firmware/binary-s390x/Release
  5fb93a5e39d770f8428001ac87bf6e04f3772e0e 50 main/Contents-amd64
  8220bb918deed0d6637484729b3e43b31fe45d7c 64 main/Contents-amd64.gz
  415d1cfe8975ec1df68a49a079f1b4a2f56f497d 80 main/Contents-amd64.bz2
  52c3d88d3ac8e344d2394dcd2627e609b01dc0f0 108 main/Contents-amd64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/Contents-amd64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/Contents-amd64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib/Contents-amd64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib/Contents-amd64.xz
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/Contents-amd64
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/Contents-amd64.gz
  64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free/Contents-amd64.bz2
@@ -507,62 +199,10 @@ SHA1:
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/Contents-amd64.gz
  64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware/Contents-amd64.bz2
  9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware/Contents-amd64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/Contents-amd64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/Contents-amd64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 main-testing/Contents-amd64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 main-testing/Contents-amd64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/Contents-amd64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/Contents-amd64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib-testing/Contents-amd64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib-testing/Contents-amd64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/Contents-amd64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/Contents-amd64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-testing/Contents-amd64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-testing/Contents-amd64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/Contents-amd64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/Contents-amd64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware-testing/Contents-amd64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware-testing/Contents-amd64.xz
- 5fb93a5e39d770f8428001ac87bf6e04f3772e0e 50 main/Contents-arm64
- 8220bb918deed0d6637484729b3e43b31fe45d7c 64 main/Contents-arm64.gz
- 415d1cfe8975ec1df68a49a079f1b4a2f56f497d 80 main/Contents-arm64.bz2
- 52c3d88d3ac8e344d2394dcd2627e609b01dc0f0 108 main/Contents-arm64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/Contents-arm64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/Contents-arm64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib/Contents-arm64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib/Contents-arm64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/Contents-arm64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/Contents-arm64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free/Contents-arm64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free/Contents-arm64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware/Contents-arm64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/Contents-arm64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware/Contents-arm64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware/Contents-arm64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/Contents-arm64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/Contents-arm64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 main-testing/Contents-arm64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 main-testing/Contents-arm64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/Contents-arm64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/Contents-arm64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib-testing/Contents-arm64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib-testing/Contents-arm64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/Contents-arm64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/Contents-arm64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-testing/Contents-arm64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-testing/Contents-arm64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/Contents-arm64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/Contents-arm64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware-testing/Contents-arm64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware-testing/Contents-arm64.xz
- 5fb93a5e39d770f8428001ac87bf6e04f3772e0e 50 main/Contents-i386
- 8220bb918deed0d6637484729b3e43b31fe45d7c 64 main/Contents-i386.gz
- 415d1cfe8975ec1df68a49a079f1b4a2f56f497d 80 main/Contents-i386.bz2
- 52c3d88d3ac8e344d2394dcd2627e609b01dc0f0 108 main/Contents-i386.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/Contents-i386
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/Contents-i386.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib/Contents-i386.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib/Contents-i386.xz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/Contents-i386
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/Contents-i386.gz
+ 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 main/Contents-i386.bz2
+ 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 main/Contents-i386.xz
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/Contents-i386
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/Contents-i386.gz
  64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free/Contents-i386.bz2
@@ -571,30 +211,22 @@ SHA1:
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/Contents-i386.gz
  64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware/Contents-i386.bz2
  9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware/Contents-i386.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/Contents-i386
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/Contents-i386.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 main-testing/Contents-i386.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 main-testing/Contents-i386.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/Contents-i386
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/Contents-i386.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib-testing/Contents-i386.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib-testing/Contents-i386.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/Contents-i386
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/Contents-i386.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-testing/Contents-i386.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-testing/Contents-i386.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/Contents-i386
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/Contents-i386.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware-testing/Contents-i386.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware-testing/Contents-i386.xz
- 5fb93a5e39d770f8428001ac87bf6e04f3772e0e 50 main/Contents-ppc64el
- 8220bb918deed0d6637484729b3e43b31fe45d7c 64 main/Contents-ppc64el.gz
- 415d1cfe8975ec1df68a49a079f1b4a2f56f497d 80 main/Contents-ppc64el.bz2
- 52c3d88d3ac8e344d2394dcd2627e609b01dc0f0 108 main/Contents-ppc64el.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/Contents-ppc64el
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/Contents-ppc64el.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib/Contents-ppc64el.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib/Contents-ppc64el.xz
+ 5fb93a5e39d770f8428001ac87bf6e04f3772e0e 50 main/Contents-arm64
+ 8220bb918deed0d6637484729b3e43b31fe45d7c 64 main/Contents-arm64.gz
+ 415d1cfe8975ec1df68a49a079f1b4a2f56f497d 80 main/Contents-arm64.bz2
+ 52c3d88d3ac8e344d2394dcd2627e609b01dc0f0 108 main/Contents-arm64.xz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/Contents-arm64
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/Contents-arm64.gz
+ 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free/Contents-arm64.bz2
+ 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free/Contents-arm64.xz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware/Contents-arm64
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/Contents-arm64.gz
+ 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware/Contents-arm64.bz2
+ 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware/Contents-arm64.xz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/Contents-ppc64el
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/Contents-ppc64el.gz
+ 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 main/Contents-ppc64el.bz2
+ 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 main/Contents-ppc64el.xz
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/Contents-ppc64el
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/Contents-ppc64el.gz
  64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free/Contents-ppc64el.bz2
@@ -603,30 +235,10 @@ SHA1:
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/Contents-ppc64el.gz
  64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware/Contents-ppc64el.bz2
  9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware/Contents-ppc64el.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/Contents-ppc64el
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/Contents-ppc64el.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 main-testing/Contents-ppc64el.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 main-testing/Contents-ppc64el.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/Contents-ppc64el
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/Contents-ppc64el.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib-testing/Contents-ppc64el.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib-testing/Contents-ppc64el.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/Contents-ppc64el
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/Contents-ppc64el.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-testing/Contents-ppc64el.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-testing/Contents-ppc64el.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/Contents-ppc64el
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/Contents-ppc64el.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware-testing/Contents-ppc64el.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware-testing/Contents-ppc64el.xz
- 5fb93a5e39d770f8428001ac87bf6e04f3772e0e 50 main/Contents-riscv64
- 8220bb918deed0d6637484729b3e43b31fe45d7c 64 main/Contents-riscv64.gz
- 415d1cfe8975ec1df68a49a079f1b4a2f56f497d 80 main/Contents-riscv64.bz2
- 52c3d88d3ac8e344d2394dcd2627e609b01dc0f0 108 main/Contents-riscv64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/Contents-riscv64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/Contents-riscv64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib/Contents-riscv64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib/Contents-riscv64.xz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/Contents-riscv64
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/Contents-riscv64.gz
+ 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 main/Contents-riscv64.bz2
+ 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 main/Contents-riscv64.xz
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/Contents-riscv64
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/Contents-riscv64.gz
  64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free/Contents-riscv64.bz2
@@ -635,30 +247,10 @@ SHA1:
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/Contents-riscv64.gz
  64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware/Contents-riscv64.bz2
  9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware/Contents-riscv64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/Contents-riscv64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/Contents-riscv64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 main-testing/Contents-riscv64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 main-testing/Contents-riscv64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/Contents-riscv64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/Contents-riscv64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib-testing/Contents-riscv64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib-testing/Contents-riscv64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/Contents-riscv64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/Contents-riscv64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-testing/Contents-riscv64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-testing/Contents-riscv64.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/Contents-riscv64
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/Contents-riscv64.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware-testing/Contents-riscv64.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware-testing/Contents-riscv64.xz
- 5fb93a5e39d770f8428001ac87bf6e04f3772e0e 50 main/Contents-s390x
- 8220bb918deed0d6637484729b3e43b31fe45d7c 64 main/Contents-s390x.gz
- 415d1cfe8975ec1df68a49a079f1b4a2f56f497d 80 main/Contents-s390x.bz2
- 52c3d88d3ac8e344d2394dcd2627e609b01dc0f0 108 main/Contents-s390x.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib/Contents-s390x
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib/Contents-s390x.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib/Contents-s390x.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib/Contents-s390x.xz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/Contents-s390x
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/Contents-s390x.gz
+ 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 main/Contents-s390x.bz2
+ 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 main/Contents-s390x.xz
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free/Contents-s390x
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free/Contents-s390x.gz
  64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free/Contents-s390x.bz2
@@ -667,175 +259,65 @@ SHA1:
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware/Contents-s390x.gz
  64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware/Contents-s390x.bz2
  9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware/Contents-s390x.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main-testing/Contents-s390x
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main-testing/Contents-s390x.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 main-testing/Contents-s390x.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 main-testing/Contents-s390x.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 contrib-testing/Contents-s390x
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 contrib-testing/Contents-s390x.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 contrib-testing/Contents-s390x.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 contrib-testing/Contents-s390x.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-testing/Contents-s390x
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-testing/Contents-s390x.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-testing/Contents-s390x.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-testing/Contents-s390x.xz
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 non-free-firmware-testing/Contents-s390x
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 non-free-firmware-testing/Contents-s390x.gz
- 64a543afbb5f4bf728636bdcbbe7a2ed0804adc2 14 non-free-firmware-testing/Contents-s390x.bz2
- 9746882f4236fa1c3a8f86be2f1d9c46680c0b10 32 non-free-firmware-testing/Contents-s390x.xz
 SHA256:
  2ba834e3277def5dcf9c05ed7590ff4f05f4baea2409c3073b534f73c2727149 412 main/binary-amd64/Packages
  c66882dcd570ed13cb0e31debb5791e2ca93eb4020d9cea80740082ad177022f 311 main/binary-amd64/Packages.gz
- 9fa0c08360c1b77800ac8ae26efec64f9833fd84a6ed8ea9b5c40e7bc8ee04e4 156 main/binary-amd64/Release
+ f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8 36 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-i386/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-i386/Packages.gz
+ 2ca4451c438b7f4614813919cded632edc7d0318dd7b120d5aa77ec03f055dd6 35 main/binary-i386/Release
  93323193fe80a17bfbb4dcf27df4d162a38912ad57fcaefd354d6bc7fbae4e79 408 main/binary-arm64/Packages
  4680994ffa512e619d504f0f3b32e61f2b6f425576e93031366242408b4b6ddf 311 main/binary-arm64/Packages.gz
- bdb3dd7ccee555b438b5838b18a03328411f67d0d2eb587d5d450bf324f48e97 156 main/binary-arm64/Release
- 93323193fe80a17bfbb4dcf27df4d162a38912ad57fcaefd354d6bc7fbae4e79 408 main/binary-i386/Packages
- 4680994ffa512e619d504f0f3b32e61f2b6f425576e93031366242408b4b6ddf 311 main/binary-i386/Packages.gz
- 776e1e01fab2f189481f8aaa53b2b61f6f1662dcdcbe4b50c56dac620f12006e 155 main/binary-i386/Release
- 93323193fe80a17bfbb4dcf27df4d162a38912ad57fcaefd354d6bc7fbae4e79 408 main/binary-ppc64el/Packages
- 4680994ffa512e619d504f0f3b32e61f2b6f425576e93031366242408b4b6ddf 311 main/binary-ppc64el/Packages.gz
- cf218d1a48620ec9c1032dbaaec6c0163a9c1a2141d2d637f51f51cc9dd8b136 158 main/binary-ppc64el/Release
- 93323193fe80a17bfbb4dcf27df4d162a38912ad57fcaefd354d6bc7fbae4e79 408 main/binary-riscv64/Packages
- 4680994ffa512e619d504f0f3b32e61f2b6f425576e93031366242408b4b6ddf 311 main/binary-riscv64/Packages.gz
- 59f7a9093423fb83e69bada095025f640eca27ffa8806e28cf662f6187a61ea7 158 main/binary-riscv64/Release
- 93323193fe80a17bfbb4dcf27df4d162a38912ad57fcaefd354d6bc7fbae4e79 408 main/binary-s390x/Packages
- 4680994ffa512e619d504f0f3b32e61f2b6f425576e93031366242408b4b6ddf 311 main/binary-s390x/Packages.gz
- a83b194d646c9dd07bbcda26cee2bf6661d420ed88eb154b23fe5007b21169d5 156 main/binary-s390x/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/binary-amd64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/binary-amd64/Packages.gz
- 76858dd05272814a26c30f06765e07920e364a8a42f2bdd4321b402f0e6fa2ad 159 contrib/binary-amd64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/binary-arm64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/binary-arm64/Packages.gz
- 5df40b8ff0b9880ffa1450dee04b79c20c9d4ba3b8ad799db544872aa65e6caf 159 contrib/binary-arm64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/binary-i386/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/binary-i386/Packages.gz
- bdf04c3f5ab29aab7a9ae9f72f65c9ad1e5880004f9c1bc37a257f68de206fa5 158 contrib/binary-i386/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/binary-ppc64el/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/binary-ppc64el/Packages.gz
- 98477055027dfa7ea7b648ac8c48c8f260226f6c545663bbbaf3389756ec3747 161 contrib/binary-ppc64el/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/binary-riscv64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/binary-riscv64/Packages.gz
- 780a4ea807b0416bba88ea22cf8c0993ffcdc0fa8379754d9039ed7b4b4af032 161 contrib/binary-riscv64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/binary-s390x/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/binary-s390x/Packages.gz
- f53dac74f3511626b8ed9ed35306d8b773af9a824343f65d1134ef2d19bb2f06 159 contrib/binary-s390x/Release
+ 1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf 36 main/binary-arm64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-ppc64el/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-ppc64el/Packages.gz
+ 071c9456b96588c642ad2301120862248ac31f4cdeb64de0043a415df1f301b8 38 main/binary-ppc64el/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-riscv64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-riscv64/Packages.gz
+ 8f55e5713e0765706afa27e2acbd4fb599b1bbb2d14e41c5c27228d5929e9b8d 38 main/binary-riscv64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-s390x/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-s390x/Packages.gz
+ a953ab7d6eb2eec2572b494283ce90d32621357f77f09fe189ebd0d4e06470ef 36 main/binary-s390x/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/binary-amd64/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/binary-amd64/Packages.gz
- 2f958877aa05945412d086963877c43de00e9dfde2535b210a52edc5992c1fcd 160 non-free/binary-amd64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/binary-arm64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/binary-arm64/Packages.gz
- 6b3a22a82691fa2ed25c96cb7351709e30f60f6906fd0ddbcd6c43003c9beed9 160 non-free/binary-arm64/Release
+ b2eac22541357ca7a8aae11036c71006160def239931193adfd9ebaa83ddc43d 40 non-free/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/binary-i386/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/binary-i386/Packages.gz
- 0f32bd97f43566cbf208a9930ef97285ca68e4374ca6e9fe039c178daffeb6b2 159 non-free/binary-i386/Release
+ 633117d4a1f03701e754e2693fdca895807cbea2ef0a27bcfa45c6f53302347c 39 non-free/binary-i386/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/binary-arm64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/binary-arm64/Packages.gz
+ bad4d5f1335ebc030c2cae0c8624a9657b302ad9067280b4130b08ea64496083 40 non-free/binary-arm64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/binary-ppc64el/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/binary-ppc64el/Packages.gz
- bd991d4bad485f6c6518c583cd1d776e4b2b1c5f0f8c4ba745e3b0873c674689 162 non-free/binary-ppc64el/Release
+ 5d86b9c8db2f420d5ecff70ce176015a067077ba059bf061537fc686c8ec1eef 42 non-free/binary-ppc64el/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/binary-riscv64/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/binary-riscv64/Packages.gz
- 65da31a7bad0e5968b1ec53689d50d92e1860497e2b40d3810d2ecd2e3aaa136 162 non-free/binary-riscv64/Release
+ a9dd4c81c97242b5f0fcd009e6c9da90ecd012c28adb8fba156b47d69e10cac6 42 non-free/binary-riscv64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/binary-s390x/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/binary-s390x/Packages.gz
- 8aea1f09d1834a324d3932c11f439fc3ca2573820ab4d6ab35139dd7c6e46ee7 160 non-free/binary-s390x/Release
+ bd51054524a54c89178d14c15068d14df2c0e07121eb45fe633f2d14fbd2c8d4 40 non-free/binary-s390x/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware/binary-amd64/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/binary-amd64/Packages.gz
- 6ffcc7ed95f6e3df17b5c44620fb81781f9cab27e37bf52d41c56e33fe257fb8 169 non-free-firmware/binary-amd64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware/binary-arm64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/binary-arm64/Packages.gz
- 5ed71e1cc5265746aae770e138cac837a8cb0a58516148f58ed66cf6e49be001 169 non-free-firmware/binary-arm64/Release
+ 79f390e75bb32e53c67586c507a510b22b27c3f2b2aa19c88d1d2990ed3c44bd 49 non-free-firmware/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware/binary-i386/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/binary-i386/Packages.gz
- cfa573d6280dc24abe07839efafc866c9f796eec07a86b8b34987e2067a73f84 168 non-free-firmware/binary-i386/Release
+ 7ef4c5856e4d937decdc91a9828c0f568f02fb5547d077edee0e9f9417b5bd76 48 non-free-firmware/binary-i386/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware/binary-arm64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/binary-arm64/Packages.gz
+ 78b6572896ff427d947357e863c638eda9386b0867d2aa822d20d7a6e05dc5bc 49 non-free-firmware/binary-arm64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware/binary-ppc64el/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/binary-ppc64el/Packages.gz
- 4f0df703015620a1b59916b953a46f9c6102abea0a522c780a8850a49c6eefe0 171 non-free-firmware/binary-ppc64el/Release
+ ced0d11321b7b5b5581bde4e0e47e473de432f5aeddca9bf92ee19b39e3a8fb1 51 non-free-firmware/binary-ppc64el/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware/binary-riscv64/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/binary-riscv64/Packages.gz
- 2f204462af373ddd550e9137e0c3f444444ae178a5eeaa6a76177f1311f4f5de 171 non-free-firmware/binary-riscv64/Release
+ 825b1d40f533e9ab62c5f28498e4af1fca9ed38bc841ccbde9e37ac809e21e66 51 non-free-firmware/binary-riscv64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware/binary-s390x/Packages
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/binary-s390x/Packages.gz
- 465404969403e94ddca22b97fc461c4c61a73bc7bc900714b6c77b3fda6616ae 169 non-free-firmware/binary-s390x/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/binary-amd64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/binary-amd64/Packages.gz
- 60dbf420063376b5da77ff6646b0afa2690f4e7e58679fd9523a84bdbebc3bc2 164 main-testing/binary-amd64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/binary-arm64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/binary-arm64/Packages.gz
- 924295c3dae5b4d8cce00d94ac9036545e89af7c6883779c7d584516ba012e8c 164 main-testing/binary-arm64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/binary-i386/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/binary-i386/Packages.gz
- bcd6b53130012775c23b0cb3848e0bdba63964fc78e19a010f87e7eca8e11355 163 main-testing/binary-i386/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/binary-ppc64el/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/binary-ppc64el/Packages.gz
- 936f7cbc11ee849a0063bcf3f9c5a4a51a1cbeb3e1dfeca73e88624385adb2f5 166 main-testing/binary-ppc64el/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/binary-riscv64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/binary-riscv64/Packages.gz
- 728c0285f6770cd27cc14ca73f904a1ce7a8c9aa11ef6b1b3ef2eacebabf3f9a 166 main-testing/binary-riscv64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/binary-s390x/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/binary-s390x/Packages.gz
- d58cb5d364909f85ef3f2aa217511c71d9becd59dd2db601e536c2ba9ce7772b 164 main-testing/binary-s390x/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/binary-amd64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/binary-amd64/Packages.gz
- b165002aee49bd695742003cc3b87b8c1c23ebef980a3a196642f519e3a94216 167 contrib-testing/binary-amd64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/binary-arm64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/binary-arm64/Packages.gz
- 082e48ea969ac9d627c6f256626daf1617c4c46cfea5349ed335ab9db2b9133f 167 contrib-testing/binary-arm64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/binary-i386/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/binary-i386/Packages.gz
- a174fd1370f41449f6e92f53c49f59b65896fe3527b52a4ba2f4d6d9fc92291e 166 contrib-testing/binary-i386/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/binary-ppc64el/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/binary-ppc64el/Packages.gz
- f4dc4e3ffa43a5caeb4e32c8cd917377c255680cf540ec4b97d0a0b3a612cc11 169 contrib-testing/binary-ppc64el/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/binary-riscv64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/binary-riscv64/Packages.gz
- bc85d6c7d120fe55fbfd2912bc6e523ab0976626c83559334505a716f7efc381 169 contrib-testing/binary-riscv64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/binary-s390x/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/binary-s390x/Packages.gz
- a2e43d9368e7413b45e7542b6b4d3f36feebe3cf6723f272fde5eefafe6cef38 167 contrib-testing/binary-s390x/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/binary-amd64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/binary-amd64/Packages.gz
- b457d99f886b2104f8dc6f1617c571fa9b15fdca1844e0ac5cc61a2f88c3d556 168 non-free-testing/binary-amd64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/binary-arm64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/binary-arm64/Packages.gz
- f3477ed350e55b60b969924e1e5e2772b4b4cedac58196182697fd030a44f656 168 non-free-testing/binary-arm64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/binary-i386/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/binary-i386/Packages.gz
- 1af64c04512281077652fdc9408a069f97b55ad26d38728d1722f9993f1072a4 167 non-free-testing/binary-i386/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/binary-ppc64el/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/binary-ppc64el/Packages.gz
- e51aca5a1e45bf6806208f6c02d2f87fb19358cd3d06942559db28101e3529d7 170 non-free-testing/binary-ppc64el/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/binary-riscv64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/binary-riscv64/Packages.gz
- 5acf1a692b141c58e11123485b1468b8cdfd62cf4b23b2127d180ff5eed62399 170 non-free-testing/binary-riscv64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/binary-s390x/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/binary-s390x/Packages.gz
- 7560f49bf20c40331479df9fcf772a0de3abf900bf8daf64ccf468ee4316157a 168 non-free-testing/binary-s390x/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/binary-amd64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/binary-amd64/Packages.gz
- 30400cd35720a55318a58dd0f1720c9217fe2df8b7d467ab0b46ea41ad23d619 177 non-free-firmware-testing/binary-amd64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/binary-arm64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/binary-arm64/Packages.gz
- a38c7f45c65988768fe3dd998c4cf020b24a061723c5d023fdab006e23bf6d07 177 non-free-firmware-testing/binary-arm64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/binary-i386/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/binary-i386/Packages.gz
- 9918016e43a6210a18250c15bedc4f7ce38b08c74d0cc1c471407219fe85baa1 176 non-free-firmware-testing/binary-i386/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/binary-ppc64el/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/binary-ppc64el/Packages.gz
- 956015846836437fc14e32459ab2e2111f7363587cecf42e56ea2d3393bd2f5a 179 non-free-firmware-testing/binary-ppc64el/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/binary-riscv64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/binary-riscv64/Packages.gz
- 2d03d589bf5addde06bdb54e152272a3901842454b0bc84fe2c269321dce7be6 179 non-free-firmware-testing/binary-riscv64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/binary-s390x/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/binary-s390x/Packages.gz
- d2be8332eba524d1f947e3b523518c5d6f3fd1fddcee34c6255f6c5c743da361 177 non-free-firmware-testing/binary-s390x/Release
+ 2683bfe8f2e3cb07e4e98135a04076f1da066253542a95ff02d13d4155236fad 49 non-free-firmware/binary-s390x/Release
  21317f93a63ea5d4ce2fc1680c1ae02eb191411f51340592c205a23368596e06 50 main/Contents-amd64
  e551ca9fe5bc8c7247149e90c0b5cad048477605c137991d58af9fe651a139ac 64 main/Contents-amd64.gz
  1d35b5c85757a11c3e712d9ee400d0215161aa46ab71ad9b9bf75245131da96d 80 main/Contents-amd64.bz2
  87d2fdcebe2a9b16ef32a317eb84cc7f88b3689781322f969fb54ae80c6b70fd 108 main/Contents-amd64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/Contents-amd64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/Contents-amd64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib/Contents-amd64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib/Contents-amd64.xz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/Contents-amd64
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/Contents-amd64.gz
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free/Contents-amd64.bz2
@@ -844,62 +326,10 @@ SHA256:
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/Contents-amd64.gz
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware/Contents-amd64.bz2
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware/Contents-amd64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/Contents-amd64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/Contents-amd64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main-testing/Contents-amd64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main-testing/Contents-amd64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/Contents-amd64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/Contents-amd64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib-testing/Contents-amd64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib-testing/Contents-amd64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/Contents-amd64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/Contents-amd64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-testing/Contents-amd64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-testing/Contents-amd64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/Contents-amd64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/Contents-amd64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware-testing/Contents-amd64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-amd64.xz
- 21317f93a63ea5d4ce2fc1680c1ae02eb191411f51340592c205a23368596e06 50 main/Contents-arm64
- e551ca9fe5bc8c7247149e90c0b5cad048477605c137991d58af9fe651a139ac 64 main/Contents-arm64.gz
- 1d35b5c85757a11c3e712d9ee400d0215161aa46ab71ad9b9bf75245131da96d 80 main/Contents-arm64.bz2
- 87d2fdcebe2a9b16ef32a317eb84cc7f88b3689781322f969fb54ae80c6b70fd 108 main/Contents-arm64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/Contents-arm64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/Contents-arm64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib/Contents-arm64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib/Contents-arm64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/Contents-arm64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/Contents-arm64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free/Contents-arm64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free/Contents-arm64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware/Contents-arm64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/Contents-arm64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware/Contents-arm64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware/Contents-arm64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/Contents-arm64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/Contents-arm64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main-testing/Contents-arm64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main-testing/Contents-arm64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/Contents-arm64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/Contents-arm64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib-testing/Contents-arm64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib-testing/Contents-arm64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/Contents-arm64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/Contents-arm64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-testing/Contents-arm64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-testing/Contents-arm64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/Contents-arm64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/Contents-arm64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware-testing/Contents-arm64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-arm64.xz
- 21317f93a63ea5d4ce2fc1680c1ae02eb191411f51340592c205a23368596e06 50 main/Contents-i386
- e551ca9fe5bc8c7247149e90c0b5cad048477605c137991d58af9fe651a139ac 64 main/Contents-i386.gz
- 1d35b5c85757a11c3e712d9ee400d0215161aa46ab71ad9b9bf75245131da96d 80 main/Contents-i386.bz2
- 87d2fdcebe2a9b16ef32a317eb84cc7f88b3689781322f969fb54ae80c6b70fd 108 main/Contents-i386.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/Contents-i386
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/Contents-i386.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib/Contents-i386.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib/Contents-i386.xz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/Contents-i386
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/Contents-i386.gz
+ d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main/Contents-i386.bz2
+ 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main/Contents-i386.xz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/Contents-i386
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/Contents-i386.gz
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free/Contents-i386.bz2
@@ -908,30 +338,22 @@ SHA256:
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/Contents-i386.gz
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware/Contents-i386.bz2
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware/Contents-i386.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/Contents-i386
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/Contents-i386.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main-testing/Contents-i386.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main-testing/Contents-i386.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/Contents-i386
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/Contents-i386.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib-testing/Contents-i386.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib-testing/Contents-i386.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/Contents-i386
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/Contents-i386.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-testing/Contents-i386.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-testing/Contents-i386.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/Contents-i386
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/Contents-i386.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware-testing/Contents-i386.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-i386.xz
- 21317f93a63ea5d4ce2fc1680c1ae02eb191411f51340592c205a23368596e06 50 main/Contents-ppc64el
- e551ca9fe5bc8c7247149e90c0b5cad048477605c137991d58af9fe651a139ac 64 main/Contents-ppc64el.gz
- 1d35b5c85757a11c3e712d9ee400d0215161aa46ab71ad9b9bf75245131da96d 80 main/Contents-ppc64el.bz2
- 87d2fdcebe2a9b16ef32a317eb84cc7f88b3689781322f969fb54ae80c6b70fd 108 main/Contents-ppc64el.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/Contents-ppc64el
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/Contents-ppc64el.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib/Contents-ppc64el.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib/Contents-ppc64el.xz
+ 21317f93a63ea5d4ce2fc1680c1ae02eb191411f51340592c205a23368596e06 50 main/Contents-arm64
+ e551ca9fe5bc8c7247149e90c0b5cad048477605c137991d58af9fe651a139ac 64 main/Contents-arm64.gz
+ 1d35b5c85757a11c3e712d9ee400d0215161aa46ab71ad9b9bf75245131da96d 80 main/Contents-arm64.bz2
+ 87d2fdcebe2a9b16ef32a317eb84cc7f88b3689781322f969fb54ae80c6b70fd 108 main/Contents-arm64.xz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/Contents-arm64
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/Contents-arm64.gz
+ d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free/Contents-arm64.bz2
+ 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free/Contents-arm64.xz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware/Contents-arm64
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/Contents-arm64.gz
+ d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware/Contents-arm64.bz2
+ 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware/Contents-arm64.xz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/Contents-ppc64el
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/Contents-ppc64el.gz
+ d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main/Contents-ppc64el.bz2
+ 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main/Contents-ppc64el.xz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/Contents-ppc64el
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/Contents-ppc64el.gz
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free/Contents-ppc64el.bz2
@@ -940,30 +362,10 @@ SHA256:
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/Contents-ppc64el.gz
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware/Contents-ppc64el.bz2
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware/Contents-ppc64el.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/Contents-ppc64el
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/Contents-ppc64el.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main-testing/Contents-ppc64el.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main-testing/Contents-ppc64el.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/Contents-ppc64el
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/Contents-ppc64el.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib-testing/Contents-ppc64el.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib-testing/Contents-ppc64el.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/Contents-ppc64el
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/Contents-ppc64el.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-testing/Contents-ppc64el.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-testing/Contents-ppc64el.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/Contents-ppc64el
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/Contents-ppc64el.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware-testing/Contents-ppc64el.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-ppc64el.xz
- 21317f93a63ea5d4ce2fc1680c1ae02eb191411f51340592c205a23368596e06 50 main/Contents-riscv64
- e551ca9fe5bc8c7247149e90c0b5cad048477605c137991d58af9fe651a139ac 64 main/Contents-riscv64.gz
- 1d35b5c85757a11c3e712d9ee400d0215161aa46ab71ad9b9bf75245131da96d 80 main/Contents-riscv64.bz2
- 87d2fdcebe2a9b16ef32a317eb84cc7f88b3689781322f969fb54ae80c6b70fd 108 main/Contents-riscv64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/Contents-riscv64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/Contents-riscv64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib/Contents-riscv64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib/Contents-riscv64.xz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/Contents-riscv64
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/Contents-riscv64.gz
+ d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main/Contents-riscv64.bz2
+ 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main/Contents-riscv64.xz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/Contents-riscv64
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/Contents-riscv64.gz
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free/Contents-riscv64.bz2
@@ -972,30 +374,10 @@ SHA256:
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/Contents-riscv64.gz
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware/Contents-riscv64.bz2
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware/Contents-riscv64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/Contents-riscv64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/Contents-riscv64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main-testing/Contents-riscv64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main-testing/Contents-riscv64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/Contents-riscv64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/Contents-riscv64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib-testing/Contents-riscv64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib-testing/Contents-riscv64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/Contents-riscv64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/Contents-riscv64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-testing/Contents-riscv64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-testing/Contents-riscv64.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/Contents-riscv64
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/Contents-riscv64.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware-testing/Contents-riscv64.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-riscv64.xz
- 21317f93a63ea5d4ce2fc1680c1ae02eb191411f51340592c205a23368596e06 50 main/Contents-s390x
- e551ca9fe5bc8c7247149e90c0b5cad048477605c137991d58af9fe651a139ac 64 main/Contents-s390x.gz
- 1d35b5c85757a11c3e712d9ee400d0215161aa46ab71ad9b9bf75245131da96d 80 main/Contents-s390x.bz2
- 87d2fdcebe2a9b16ef32a317eb84cc7f88b3689781322f969fb54ae80c6b70fd 108 main/Contents-s390x.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib/Contents-s390x
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib/Contents-s390x.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib/Contents-s390x.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib/Contents-s390x.xz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/Contents-s390x
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/Contents-s390x.gz
+ d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main/Contents-s390x.bz2
+ 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main/Contents-s390x.xz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free/Contents-s390x
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free/Contents-s390x.gz
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free/Contents-s390x.bz2
@@ -1004,35 +386,19 @@ SHA256:
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware/Contents-s390x.gz
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware/Contents-s390x.bz2
  0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware/Contents-s390x.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main-testing/Contents-s390x
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main-testing/Contents-s390x.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main-testing/Contents-s390x.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 main-testing/Contents-s390x.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 contrib-testing/Contents-s390x
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 contrib-testing/Contents-s390x.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 contrib-testing/Contents-s390x.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 contrib-testing/Contents-s390x.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-testing/Contents-s390x
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-testing/Contents-s390x.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-testing/Contents-s390x.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-testing/Contents-s390x.xz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 non-free-firmware-testing/Contents-s390x
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 non-free-firmware-testing/Contents-s390x.gz
- d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 non-free-firmware-testing/Contents-s390x.bz2
- 0040f94d11d0039505328a90b2ff48968db873e9e7967307631bf40ef5679275 32 non-free-firmware-testing/Contents-s390x.xz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmhyHMsACgkQK0jA7fsu
-RC83OA//XX9n6OnpqkVOht+cI5DHET9SXG9k+Z/oPtCDd1SiOG3ZGLuX0l4ZfwKq
-lp8giwgB3LSfAnbHaQQ0X0NZiwonuSc4AkY+6j8eX16lPXj38AfA1M9QMed8Sd4W
-aZgXq38qlu6ntsB36f0k2BYGrhYsa7gMgZK03dBS4jNAz3Dmz5p3rxGKF1Mk+RVg
-1Se7dvDdiEd0N9IJ0l2SMGpFDlCOjEnYEjyH50gHy04SGf2oNs46ZOCcevFDg74w
-+3DYSs5FaxAxEV3ui7m8dDAi+caECag1SIsmQSLqvQYkph7fSzlZVrt9qMbZ2170
-w/vJK4WeZKQ3i/kgOUJ1IXv0iSBz1s/jKTXpkvS7Ys0ZipMiV2hjLmK1uWD6hJ8y
-FG3ph9ggVvGe4puA3FofrDVR2kV+DixytB70+VgnCMh4+Wb+huN0CEfXAGveoO8T
-SIKXRAp5WrnKl6hedegQTlRNuO7Wz3/2xp6kq+OKEMcYZ9DhgJ+SvvPu9sQjfjJA
-xHE84XmvDXvGZFTM3ZFj1ZLD+dKnfCspKU2NMnVtYqG/iKnB7T2EhYDAdAZqgJDj
-MwMU3Qy8nesq5iIYpPur9H+SpqpF+jgsrK5AySCU5Yq5QSlb0jjFhLaaRDjuMiTu
-JX/1/XI/RELLPQvjnv2U6uoYyf/+KANOtjEobGelH7xrlCeViXw=
-=9Q23
+iQIzBAEBCgAdFiEEPNBOlEymNZWn22dhK0jA7fsuRC8FAmh9J70ACgkQK0jA7fsu
+RC/4OA/8CBFRnpBvNRH42b5Tg4q9SVmXmGl6N4C3bXAnjB86TO2XfUv/A0igE2/i
+vx6f1bmqDKLnkvaIoSlW3umRsPWNyfAzpf/t7c7/7RgudLkqgLZy7VBdLuGL8tLM
+wqaLtnH+WwFux38d+UoqSl5HtwopllphHUaG+MAH5HuhaJqjjyhEoloR8KPZwJfb
++vYU6OaIncc1OzNwcZB9bK+xYOb7yljTeSbU93bfVF87Lr64qEwryo0ItLujzKci
+ZcKeB4O3ZI8HvLHu17MWR0zjOJAGsWLqc8s+K94TkOLPStI+E/Q3oqkV6h1T3Fgu
+8sq+3r7owR2F9xzQFCnEZaSk+hjaMYF1kco8Sqga3k7nxLdYCM7RGm2MncI5TBmE
+m8oRRtD5wh3NG0M5Y6R7UYCO0+ezaFExS+hw7/2sYq4xy4gSFjNuCkdb3OfrJqd3
+UfUS4GV8i5dRhCKpZTVa78o1xWTkvOm9R9GceJhoqg5IC3GeJ3q7/vZcq892PYnd
+3wr/i0XKxmhd2s3pzhRwKdDXR7LPuNuRLU5GfBuzmqrHdb64yzbmMIjEdYHzB/lc
+jneXS5c27eWNKhyqx87j9XIXJlfKtiAh6gcttuT1co00IwAgVgp0ttClAQRd9Apn
+Ym8XhrBD77Ow7F0CzNRWPnMpDXCvMq50pdCGBoPzQmXLk0mjAsA=
+=DkIU
 -----END PGP SIGNATURE-----
